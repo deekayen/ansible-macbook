@@ -25,6 +25,10 @@ Yeah, just do that.
 Enable SSH
 ----------
 
+```
+sudo systemsetup -f -setremotelogin on
+```
+
 Run the playbook
 ----------------
 
