@@ -25,6 +25,7 @@ homebrew_cask_apps:
   - bartender
   - blueharvest
   - calibre
+  - carbon-copy-cloner
   - cleanmymac
   - codekit
   - crashplan
