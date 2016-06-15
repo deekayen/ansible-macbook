@@ -1,0 +1,77 @@
+---
+
+homebrew_packages:
+  - drush
+  - git
+  - gpg
+  - htop-osx
+  - libdvdcss
+  - mcrypt
+  - openssl
+  - pandoc
+  - wget
+
+homebrew_taps:
+  - caskroom/cask
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - 1password
+  - adobe-reader
+  - alfred
+  - android-file-transfer
+  - atom
+  - audio-hijack
+  - bartender
+  - blueharvest
+  - calibre
+  - cleanmymac
+  - codekit
+  - crashplan
+  - divvy
+  - dockertoolbox
+  - drobo-dashboard
+  - evernote
+  - expandrive
+  - firefox
+  - flip4mac
+  - flux
+  - gimp
+  - gitkraken
+  - gitter
+  - google-chrome
+  - google-drive
+  - gpgtools
+  - hazel
+  - hobo
+  - imageoptim
+  - istat-menus
+  - iterm2
+  - kaleidoscope
+  - kindle
+  - kindlegen
+  - libreoffice
+  - limechat
+  - macupdate-desktop
+  - owncloud
+  - rescuetime
+  - ripit
+  - send-to-kindle
+  - sequel-pro
+  - skitch
+  - slack
+  - smartgit
+  - smartsynchronize
+  - sourcetree
+  - sparkleshare
+  - sublime-text
+  - torbrowser
+  - tower
+  - transmission
+  - ukelele
+  - vagrant
+  - vagrant-manager
+  - virtualbox
+  - virtualbox-extension-pack
+  - virtualhostx
+  - viscosity

@@ -1,0 +1,55 @@
+---
+
+- name: Save files locally by default instead of iCloud.
+  osx_defaults: domain=NSGlobalDomain key=NSDocumentSaveNewDocumentsToCloud type=bool value=false state=present
+
+- name: Avoid automatic smart quote substitution.
+  osx_defaults: domain=NSGlobalDomain key=NSAutomaticQuoteSubstitutionEnabled type=bool value=false state=present
+
+- name: Avoid automatic smart dash substitution.
+  osx_defaults: domain=NSGlobalDomain key=NSAutomaticDashSubstitutionEnabled type=bool value=false state=present
+
+- name: Disable automatic spelling correction.
+  osx_defaults: domain=NSGlobalDomain key=NSAutomaticSpellingCorrectionEnabled type=bool value=false state=present
+
+- name: Require password screensaver when waking from screensaver.
+  osx_defaults: domain=com.apple.screensaver key=askForPassword type=int value=1 state=present
+
+- name: Set screensaver password prompt to 0 second delay.
+  osx_defaults: domain=com.apple.screensaver key=askForPasswordDelay type=int value=0 state=present
+
+- name: Show the clock on the screensaver.
+  osx_defaults: domain=com.apple.screensaver host=currentHost key=showClock type=int value=1 state=present
+
+- name: Save screenshots as PNG files.
+  osx_defaults: domain=com.apple.screencapture key=type type=string value=png state=present
+
+- name: Disable shadow in screenshot images.
+  osx_defaults: domain=com.apple.screencapture key=disable-shadow type=bool value=true state=present
+
+- name: Show hidden files by default in Finder.
+  osx_defaults: domain=com.apple.finder key=AppleShowAllFiles type=bool value=true state=present
+
+- name: Show all filename extensions in Finder.
+  osx_defaults: domain=NSGlobalDomain key=AppleShowAllExtensions type=bool value=true state=present
+
+- name: Avoid creating .DS_Store files on network volumes.
+  osx_defaults: domain=com.apple.desktopservices key=DSDontWriteNetworkStores type=bool value=true state=present
+
+- name: Enable Safari’s debug menu.
+  osx_defaults: domain=com.apple.Safari key=IncludeInternalDebugMenu type=bool value=true state=present
+
+- name: Enable the Develop menu in Safari.
+  osx_defaults: domain=com.apple.Safari key=IncludeDevelopMenu type=bool value=true state=present
+
+- name: Enable the Web Inspector in Safari.
+  osx_defaults: domain=com.apple.Safari key=WebKitDeveloperExtrasEnabledPreferenceKey type=bool value=true state=present
+
+- name: Enable the WebKit Extras in Safari.
+  osx_defaults: domain=com.apple.Safari key=com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled type=bool value=true state=present
+
+- name: Add a context menu item for showing the Web Inspector in web views.
+  osx_defaults: domain=NSGlobalDomain key=WebKitDeveloperExtras type=bool value=true state=present
+
+- name: Disable sensitive and senseless swipe-based navigation in Google Chrome.
+  osx_defaults: domain=com.google.Chrome key=AppleEnableSwipeNavigateWithScrolls type=bool value=false state=present
