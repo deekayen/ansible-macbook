@@ -50,6 +50,7 @@ homebrew_cask_apps:
   - kaleidoscope
   - kindle
   - kindlegen
+  - lastpass
   - libreoffice
   - limechat
   - macupdate-desktop
