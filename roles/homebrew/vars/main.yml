@@ -35,6 +35,7 @@ homebrew_cask_apps:
   - divvy
   - dockertoolbox
   - drobo-dashboard
+  - dropbox
   - evernote
   - expandrive
   - firefox
