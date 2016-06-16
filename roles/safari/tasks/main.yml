@@ -12,5 +12,5 @@
 - name: Enable the WebKit Extras in Safari.
   osx_defaults: domain=com.apple.Safari key=com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled type=bool value=true state=present
 
-- name: Add a context menu item for showing the Web Inspector in web views.
+- name: Add context menu item to show the Web Inspector.
   osx_defaults: domain=NSGlobalDomain key=WebKitDeveloperExtras type=bool value=true state=present
