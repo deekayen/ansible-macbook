@@ -3,5 +3,9 @@
   connection: local
 
   roles:
-    - osx_defaults
+    - finder
+    - macos
+    - screensaver
     - homebrew
+    - safari
+    - google-chrome

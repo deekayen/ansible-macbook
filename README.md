@@ -9,7 +9,7 @@ https://docs.ansible.com/ansible/intro_installation.html#latest-releases-via-pip
 
 ```
 sudo easy_install pip
-sudo pip install git+git://github.com/ansible/ansible.git@devel
+sudo pip install --ignore-installed --upgrade ansible
 ```
 
 Install Homebrew
@@ -21,13 +21,6 @@ Clone this Repo
 ---------------
 
 Yeah, just do that.
-
-Enable SSH
-----------
-
-```
-sudo systemsetup -f -setremotelogin on
-```
 
 Run the playbook
 ----------------
