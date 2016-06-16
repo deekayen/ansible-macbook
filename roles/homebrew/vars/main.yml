@@ -59,6 +59,7 @@ homebrew_cask_apps:
   - limechat
   - lockdown
   - owncloud
+  - quitter
   - rescuetime
   - ripit
   - send-to-kindle
