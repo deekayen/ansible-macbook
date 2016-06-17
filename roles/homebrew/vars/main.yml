@@ -39,6 +39,7 @@ homebrew_cask_apps:
   - evernote
   - expandrive
   - firefox
+  - flash-player
   - flip4mac
   - flux
   - gimp
@@ -59,6 +60,9 @@ homebrew_cask_apps:
   - libreoffice
   - limechat
   - lockdown
+  - omnifocus
+  - omnigraffle
+  - omnioutliner
   - owncloud
   - quitter
   - rescuetime
