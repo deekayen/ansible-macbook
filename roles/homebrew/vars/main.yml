@@ -53,6 +53,7 @@ homebrew_cask_apps:
   - imageoptim
   - istat-menus
   - iterm2
+  - java
   - kaleidoscope
   - kindle
   - kindlegen
