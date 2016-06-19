@@ -45,6 +45,7 @@ homebrew_cask_apps:
   - flux
   - focused
   - gimp
+  - gitbox
   - gitkraken
   - gitter
   - google-chrome
