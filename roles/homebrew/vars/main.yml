@@ -1,5 +1,11 @@
 ---
 
+homebrew_taps:
+  - caskroom/cask
+  - homebrew/dupes
+  - homebrew/php
+  - homebrew/versions
+
 homebrew_packages:
   - drush
   - git
@@ -11,13 +17,6 @@ homebrew_packages:
   - pandoc
   - wget
 
-homebrew_taps:
-  - caskroom/cask
-  - homebrew/dupes
-  - homebrew/php
-  - homebrew/versions
-
-homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - 1password
   - adobe-reader
@@ -29,6 +28,7 @@ homebrew_cask_apps:
   - blueharvest
   - calibre
   - carbon-copy-cloner
+  - chocolat
   - cleanmymac
   - codekit
   - crashplan
