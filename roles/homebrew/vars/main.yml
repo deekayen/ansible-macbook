@@ -42,6 +42,7 @@ homebrew_cask_apps:
   - flash-player
   - flip4mac
   - flux
+  - focused
   - gimp
   - gitkraken
   - gitter
