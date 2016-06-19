@@ -13,6 +13,7 @@ homebrew_packages:
   - htop-osx
   - libdvdcss
   - mcrypt
+  - mosh
   - openssl
   - pandoc
   - wget
