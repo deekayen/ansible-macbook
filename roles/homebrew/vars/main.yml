@@ -39,6 +39,8 @@ homebrew_cask_apps:
   - dockertoolbox
   - drobo-dashboard
   - dropbox
+  - electrum
+  - electrum-ltc
   - evernote
   - expandrive
   - firefox
