@@ -5,7 +5,10 @@
   roles:
     - finder
     - macos
+    - safari
     - screensaver
     - homebrew
-    - safari
+    - flux
+    - gitter
     - google-chrome
+    - viscosityvpn
