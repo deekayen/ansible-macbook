@@ -8,3 +8,12 @@
 
 - name: Show the clock on the screensaver.
   osx_defaults: domain=com.apple.screensaver host=currentHost key=showClock type=int value=1 state=present
+
+- name: Check for Anèmona install.
+  stat: path="{{ screensaver_home }}/Anèmona.saver"
+  register: anemona_installed
+
+- name: Download and install Anèmona.
+  unarchive: src=http://uri.cat/software/Anemona/Anemona_143.saver.zip dest="{{ screensaver_home }}" copy=no
+  register: anemona_download
+  when: anemona_installed.stat.exists == False

@@ -1,0 +1,3 @@
+---
+
+screensaver_home: "{{ lookup('env','HOME') }}/Library/Screen Savers"
