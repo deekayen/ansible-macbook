@@ -7,6 +7,7 @@ homebrew_taps:
   - homebrew/versions
 
 homebrew_packages:
+  - awscli
   - drush
   - git
   - gpg
@@ -14,6 +15,7 @@ homebrew_packages:
   - libdvdcss
   - mcrypt
   - mosh
+  - openssh
   - openssl
   - pandoc
   - wget
