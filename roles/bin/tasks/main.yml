@@ -1,0 +1,12 @@
+---
+
+- name: Check for bin directory.
+  file: path="{{ ansible_env.HOME }}/bin" state=directory
+
+- name: Check for testssl.sh.
+  stat: path="{{ ansible_env.HOME }}/bin/testssl.sh"
+  register: testssl_sh
+
+- name: Download testssl.sh.
+  get_url: url=https://testssl.sh/testssl.sh dest="{{ ansible_env.HOME }}/bin/testssl.sh" mode=0755
+  when: testssl_sh.stat.exists == False
