@@ -12,6 +12,7 @@ homebrew_packages:
   - git
   - gpg
   - htop-osx
+  - jp2a
   - libdvdcss
   - mcrypt
   - mosh
