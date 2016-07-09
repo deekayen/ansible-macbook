@@ -7,6 +7,7 @@ homebrew_taps:
   - homebrew/versions
 
 homebrew_packages:
+  - autoconf
   - awscli
   - drush
   - git
@@ -19,6 +20,7 @@ homebrew_packages:
   - openssh
   - openssl
   - pandoc
+  - unrar
   - wget
 
 homebrew_cask_apps:
