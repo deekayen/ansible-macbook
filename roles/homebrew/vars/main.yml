@@ -39,6 +39,7 @@ homebrew_cask_apps:
   - codebug
   - codekit
   - crashplan
+  - dash
   - divvy
   - dockertoolbox
   - drobo-dashboard
@@ -68,6 +69,7 @@ homebrew_cask_apps:
   - kindle
   - kindlegen
   - lastpass
+  - launchbar
   - libreoffice
   - limechat
   - lockdown
