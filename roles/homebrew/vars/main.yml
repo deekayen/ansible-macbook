@@ -5,6 +5,7 @@ homebrew_taps:
   - homebrew/dupes
   - homebrew/php
   - homebrew/versions
+  - jonof/kenutils
 
 homebrew_packages:
   - autoconf
@@ -20,6 +21,7 @@ homebrew_packages:
   - openssh
   - openssl
   - pandoc
+  - pngout
   - unrar
   - wget
 
