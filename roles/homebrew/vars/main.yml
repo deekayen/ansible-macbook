@@ -49,6 +49,7 @@ homebrew_cask_apps:
   - dropbox
   - electrum
   - electrum-ltc
+  - eve
   - evernote
   - expandrive
   - firefox
@@ -63,6 +64,7 @@ homebrew_cask_apps:
   - google-chrome
   - google-drive
   - gpgtools
+  - grammarly
   - hobo
   - imageoptim
   - istat-menus
