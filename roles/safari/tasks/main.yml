@@ -1,6 +1,6 @@
 ---
 
-- name: Enable Safari’s debug menu.
+- name: Enable Safari's debug menu.
   osx_defaults: domain=com.apple.Safari key=IncludeInternalDebugMenu type=bool value=true state=present
 
 - name: Enable the Develop menu in Safari.
