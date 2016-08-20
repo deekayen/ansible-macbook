@@ -13,7 +13,9 @@ homebrew_packages:
   - bash
   - drush
   - git
-  - gpg
+  - gnupg
+  - gnupg2
+  - gpg-agent
   - htop-osx
   - jp2a
   - libdvdcss
