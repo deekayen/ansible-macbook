@@ -46,7 +46,6 @@ homebrew_cask_apps:
   - crashplan
   - dash
   - divvy
-  - dockertoolbox
   - drobo-dashboard
   - dropbox
   - electrum
