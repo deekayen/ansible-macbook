@@ -25,7 +25,11 @@ Yeah, just do that.
 Run the playbook
 ----------------
 
-Ansible makes setup easy.
+Ansible makes setup easy. This playbook is intended to run all its tasks as local actions, so an inventory file is not necessary.
+
+```
+ansible-playbook main.yml
+```
 
 TODO
 ----
