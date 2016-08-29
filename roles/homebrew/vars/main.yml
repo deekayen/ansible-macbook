@@ -12,6 +12,7 @@ homebrew_packages:
   - autoconf
   - awscli
   - bash
+  - dos2unix
   - drush
   - git
   - gnupg
@@ -26,6 +27,7 @@ homebrew_packages:
   - openssl
   - pandoc
   - pngout
+  - unix2dos
   - unrar
   - wget
 
