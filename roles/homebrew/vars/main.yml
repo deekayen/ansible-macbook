@@ -8,6 +8,7 @@ homebrew_taps:
   - jonof/kenutils
 
 homebrew_packages:
+  - ansible
   - autoconf
   - awscli
   - bash
