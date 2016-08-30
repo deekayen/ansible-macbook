@@ -27,6 +27,7 @@ homebrew_packages:
   - openssl
   - pandoc
   - pngout
+  - pwgen
   - unix2dos
   - unrar
   - wget
