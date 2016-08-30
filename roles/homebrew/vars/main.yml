@@ -36,6 +36,8 @@ homebrew_cask_apps:
   - adobe-reader
   - alarm-clock
   - alfred
+  - amazon-drive
+  - amazon-music
   - android-file-transfer
   - atom
   - audio-hijack
