@@ -23,6 +23,7 @@ homebrew_packages:
   - libdvdcss
   - mcrypt
   - mosh
+  - nmap
   - openssh
   - openssl
   - pandoc
