@@ -15,6 +15,7 @@ homebrew_packages:
   - dos2unix
   - drush
   - git
+  - git-lfs
   - gnupg
   - gnupg2
   - gpg-agent
@@ -56,6 +57,7 @@ homebrew_cask_apps:
   - divvy
   - drobo-dashboard
   - dropbox
+  - dwihn0r-keepassx
   - electrum
   - electrum-ltc
   - eve
