@@ -58,10 +58,8 @@ homebrew_cask_apps:
   - divvy
   - drobo-dashboard
   - dropbox
-  - dwihn0r-keepassx
   - electrum
   - electrum-ltc
-  - eve
   - evernote
   - expandrive
   - firefox
@@ -85,6 +83,7 @@ homebrew_cask_apps:
   - iterm2
   - java
   - kaleidoscope
+  - keepassx
   - kindle
   - kindlegen
   - lastpass
