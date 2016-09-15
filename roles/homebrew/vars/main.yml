@@ -62,6 +62,7 @@ homebrew_cask_apps:
   - electrum-ltc
   - evernote
   - expandrive
+  - filezilla
   - firefox
   - flash-player
   - flip4mac
