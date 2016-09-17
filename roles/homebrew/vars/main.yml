@@ -109,6 +109,7 @@ homebrew_cask_apps:
   - smartsynchronize
   - sourcetree
   - sparkleshare
+  - time-out
   - timely
   - torbrowser
   - tower
