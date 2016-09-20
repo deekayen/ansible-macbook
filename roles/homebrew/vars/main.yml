@@ -43,6 +43,8 @@ homebrew_cask_apps:
   - amazon-music
   - android-file-transfer
   - atom
+  - audacity
+  - audacity-lame-library
   - audio-hijack
   - bartender
   - bee
