@@ -74,6 +74,7 @@ homebrew_cask_apps:
   - fork
   - gimp
   - gitbox
+  - github-desktop
   - gitkraken
   - gitter
   - google-chrome
