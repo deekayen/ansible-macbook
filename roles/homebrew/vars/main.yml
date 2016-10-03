@@ -81,6 +81,7 @@ homebrew_cask_apps:
   - google-drive
   - gpgtools
   - grammarly
+  - handbrake
   - hex-fiend
   - hobo
   - horndis
@@ -113,6 +114,7 @@ homebrew_cask_apps:
   - smartsynchronize
   - sourcetree
   - sparkleshare
+  - synergy
   - time-out
   - timely
   - torbrowser
