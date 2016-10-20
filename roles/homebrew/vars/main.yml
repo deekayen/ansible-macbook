@@ -2,6 +2,7 @@
 
 homebrew_taps:
   - caskroom/cask
+  - caskroom/fonts
   - homebrew/dupes
   - homebrew/php
   - homebrew/versions
@@ -71,6 +72,16 @@ homebrew_cask_apps:
   - flip4mac
   - flux
   - focused
+  - font-anonymous-pro
+  - font-bitstream-vera
+  - font-droid-sans
+  - font-droid-sans-mono
+  - font-hack
+  - font-lato
+  - font-open-sans
+  - font-source-code-pro
+  - font-source-sans-pro
+  - font-source-serif-pro
   - fork
   - gimp
   - gitbox
@@ -90,6 +101,7 @@ homebrew_cask_apps:
   - iterm2
   - java
   - kaleidoscope
+  - kap
   - keepassx
   - kindle
   - kindlegen
