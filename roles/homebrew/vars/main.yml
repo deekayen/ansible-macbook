@@ -15,6 +15,7 @@ homebrew_packages:
   - bash
   - dos2unix
   - drush
+  - ffmpeg
   - git
   - git-lfs
   - gnupg
@@ -22,6 +23,7 @@ homebrew_packages:
   - gpg-agent
   - htop-osx
   - jp2a
+  - libav
   - libdvdcss
   - mcrypt
   - mosh
@@ -35,6 +37,7 @@ homebrew_packages:
   - unix2dos
   - unrar
   - wget
+  - youtube-dl
 
 homebrew_cask_apps:
   - 1password
