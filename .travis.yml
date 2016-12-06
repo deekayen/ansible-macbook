@@ -1,0 +1,3 @@
+os: osx
+osx_image: xcode8.1
+script: ansible-playbook -i localhost, -c local main.yml
