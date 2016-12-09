@@ -90,6 +90,7 @@ homebrew_cask_apps:
   - gitbox
   - github-desktop
   - gitkraken
+  - gitscout
   - gitter
   - google-chrome
   - google-drive
