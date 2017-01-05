@@ -26,6 +26,7 @@ homebrew_packages:
   - libav
   - libdvdcss
   - mcrypt
+  - md5sha1sum
   - mosh
   - nmap
   - openssh
