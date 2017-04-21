@@ -13,10 +13,10 @@
   stat: path="{{ screensaver_home }}/Anèmona.saver"
   register: anemona_installed
 
-- name: Download and install Anèmona.
-  unarchive: src=http://uri.cat/software/Anemona/Anemona_143.saver.zip dest="{{ screensaver_home }}" copy=no
-  register: anemona_download
-  when: anemona_installed.stat.exists == False
+#- name: Download and install Anèmona.
+#  unarchive: src=http://uri.cat/software/Anemona/Anemona_143.saver.zip dest="{{ screensaver_home }}" copy=no
+#  register: anemona_download
+#  when: anemona_installed.stat.exists == False
 
 - name: Check for Padbury Clock install.
   stat: path="{{ screensaver_home }}/Padbury Clock.saver"
