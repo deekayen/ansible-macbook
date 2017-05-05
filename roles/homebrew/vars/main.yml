@@ -14,6 +14,7 @@ homebrew_packages:
   - awscli
   - bash
   - dos2unix
+  - drobo-dashboard
   - drush
   - ffmpeg
   - git
@@ -59,10 +60,8 @@ homebrew_cask_apps:
   - cleanmymac
   - codekit
   - cord
-  - crashplan
   - dash
   - divvy
-  - drobo-dashboard
   - dropbox
   - electrum
   - endurance
@@ -75,11 +74,8 @@ homebrew_cask_apps:
   - focused
   - font-anonymous-pro
   - font-bitstream-vera
-  - font-droid-sans
-  - font-droid-sans-mono
   - font-hack
   - font-lato
-  - font-open-sans
   - font-source-code-pro
   - font-source-sans-pro
   - font-source-serif-pro
