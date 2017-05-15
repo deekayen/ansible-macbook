@@ -2,3 +2,7 @@
 
 - name: Display menu icon on right side of menu bar.
   osx_defaults: domain=com.viscosityvpn.Viscosity key=MenuOnRight type=bool value=true state=present
+
+- name: Install obfsproxy.
+  pip:
+    name: obfsproxy
