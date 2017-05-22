@@ -47,7 +47,6 @@
         - alfred
         - android-file-transfer
         - atom
-        - avira-antivirus
         - bartender
         - bee
         - blueharvest
@@ -71,7 +70,6 @@
         - font-source-sans-pro
         - font-source-serif-pro
         - gimp
-        - gitscout
         - gitter
         - google-chrome
         - hex-fiend
@@ -96,7 +94,6 @@
         - skitch
         - slack
         - smartgit
-        - smartsynchronize
         - sourcetree
         - sparkleshare
         - synergy
@@ -106,10 +103,6 @@
         - vagrant-manager
         - virtualbox
         - virtualbox-extension-pack
-        - virtualhostx
-        - visual-studio-code
-        - vmware-fusion
-        - vmware-remote-console
 
     - bin
     - flux

@@ -19,7 +19,7 @@
     - homebrew_result.failed is defined
     - homebrew_result.failed
     - homebrew_result.msg is defined
-    - not 'nothing to install' in homebrew_result.msg
+    - not homebrew_result.msg | search("/nothing\sto\sinstall$/")
 
 - name: Recklessly upgrade homebrew packages.
   homebrew:

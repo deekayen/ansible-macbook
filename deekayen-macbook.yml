@@ -50,12 +50,10 @@
         - 1password
         - alarm-clock
         - alfred
-        - alternote
         - amazon-drive
         - amazon-music
         - android-file-transfer
         - atom
-        - avira-antivirus
         - bartender
         - bee
         - blueharvest
@@ -84,7 +82,6 @@
         - font-source-sans-pro
         - font-source-serif-pro
         - gimp
-        - gitscout
         - gitter
         - google-chrome
         - google-drive
@@ -116,7 +113,6 @@
         - skitch
         - slack
         - smartgit
-        - smartsynchronize
         - sourcetree
         - sparkleshare
         - synergy
@@ -132,9 +128,6 @@
         - virtualbox-extension-pack
         - virtualhostx
         - viscosity
-        - visual-studio-code
-        - vmware-fusion
-        - vmware-remote-console
 
     - bin
     - flux
