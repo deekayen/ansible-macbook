@@ -1,7 +1,7 @@
 deekayen-macbook ansible playbook
 =================================
 
-[![Build Status](https://travis-ci.org/deekayen/ansible-deekayen-macbook.svg?branch=master)](https://travis-ci.org/deekayen/ansible-deekayen-macbook) ![CC0 1.0 Universal](https://img.shields.io/badge/license-CC0--1.0-blue.svg)
+[![Build Status](https://travis-ci.org/deekayen/ansible-macbook.svg?branch=master)](https://travis-ci.org/deekayen/ansible-macbook) ![CC0 1.0 Universal](https://img.shields.io/badge/license-CC0--1.0-blue.svg)
 
 Install Homebrew
 ----------------
