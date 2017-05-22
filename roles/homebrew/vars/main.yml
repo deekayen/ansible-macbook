@@ -12,7 +12,6 @@ homebrew_packages:
   - awscli
   - bash
   - dos2unix
-  - drobo-dashboard
   - drush
   - ffmpeg
   - git
