@@ -19,7 +19,6 @@
         - awscli
         - bash
         - dos2unix
-        - drush
         - ffmpeg
         - git
         - git-lfs
