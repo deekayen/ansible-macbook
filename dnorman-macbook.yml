@@ -70,7 +70,6 @@
         - font-source-sans-pro
         - font-source-serif-pro
         - gimp
-        - gitter
         - google-chrome
         - hex-fiend
         - hobo
@@ -106,5 +105,4 @@
 
     - bin
     - flux
-    - gitter
     - google-chrome
