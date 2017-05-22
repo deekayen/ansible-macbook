@@ -131,3 +131,4 @@ homebrew_cask_apps:
   - virtualbox-extension-pack
   - virtualhostx
   - viscosity
+  - vmware-fusion
