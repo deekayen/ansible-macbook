@@ -3,27 +3,67 @@
 # https://gpgtools.tenderapp.com/kb/gpgmail-faq/gpgmail-2-hidden-settings
 
 - name: "Enable PGP/Inline support in GPGMail."
-  osx_defaults: domain=org.gpgtools.gpgmail key=UseOpenPGPInlineToSend type=bool value=yes state=present
+  osx_defaults:
+    domain: org.gpgtools.gpgmail
+    key: UseOpenPGPInlineToSend
+    type: bool
+    value: yes
+    state: present
 
 # S/MIME default = 2
 - name: "Set OpenPGP as default security method."
-  osx_defaults: domain=org.gpgtools.gpgmail key=DefaultSecurityMethod type=int value=1 state=present
+  osx_defaults:
+    domain: org.gpgtools.gpgmail
+    key: DefaultSecurityMethod
+    type: int
+    value: 1
+    state: present
 
 - name: "Let PGPMail handle encrypted messages."
-  osx_defaults: domain=org.gpgtools.gpgmail key=DisableOpenPGPForReading type=bool value=no state=present
+  osx_defaults:
+    domain: org.gpgtools.gpgmail
+    key: DisableOpenPGPForReading
+    type: bool
+    value: no
+    state: present
 
 - name: "Let myself read sent mail."
-  osx_defaults: domain=org.gpgtools.gpgmail key=DoNotEncryptToSelf type=bool value=no state=present
+  osx_defaults:
+    domain: org.gpgtools.gpgmail
+    key: DoNotEncryptToSelf
+    type: bool
+    value: no
+    state: present
 
 - name: "Don't confuse people by signing new messages by default."
-  osx_defaults: domain=org.gpgtools.gpgmail key=SignNewEmailsByDefault type=bool value=no state=present
+  osx_defaults:
+    domain: org.gpgtools.gpgmail
+    key: SignNewEmailsByDefault
+    type: bool
+    value: no
+    state: present
 
 - name: "Enable automatic updates for GPGMail."
-  osx_defaults: domain=org.gpgtools.gpgmail key=SUAutomaticallyUpdate type=bool value=yes state=present
+  osx_defaults:
+    domain: org.gpgtools.gpgmail
+    key: SUAutomaticallyUpdate
+    type: bool
+    value: yes
+    state: present
 
 - name: "Disable GPG Tools debug logging."
-  osx_defaults: domain=org.gpgtools.common key=DebugLog type=int value=0 state=present
+  osx_defaults:
+    domain: org.gpgtools.common
+    key: DebugLog
+    type: int
+    value: 0
+    state: present
 
 - name: "Show expert settings in GPG Keychain."
-  osx_defaults: domain=org.gpgtools.gpgkeychain key=showExpertSettings type=bool value=yes state=present
+  osx_defaults:
+    domain: org.gpgtools.gpgkeychain
+    key: showExpertSettings
+    type: bool
+    value: yes
+    state: present
 

@@ -1,16 +1,27 @@
 ---
 
 - name: Configure homebrew taps.
-  homebrew_tap: tap={{ item }} state=present
-  with_items: "{{ homebrew_taps }}"
+  homebrew_tap:
+    tap: "{{ item }}"
+    state: present
+  with_items:
+  - "{{ homebrew_taps }}"
 
 - name: Install homebrew packages.
-  homebrew: name={{ item }} state=present
-  with_items: "{{ homebrew_packages }}"
+  homebrew:
+    name: "{{ item }}"
+    state: present
+  with_items:
+  - "{{ homebrew_packages }}"
 
 - name: Recklessly upgrade homebrew packages.
-  homebrew: update_homebrew=yes upgrade_all=yes
+  homebrew:
+    update_homebrew: yes
+    upgrade_all: yes
 
 - name: Install cask apps.
-  homebrew_cask: name={{ item }} state=present
-  with_items: "{{ homebrew_cask_apps }}"
+  homebrew_cask:
+    name: "{{ item }}"
+    state: present
+  with_items:
+  - "{{ homebrew_cask_apps }}"
