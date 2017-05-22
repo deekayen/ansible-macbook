@@ -1,25 +1,60 @@
 ---
 
 - name: Save files locally by default instead of iCloud.
-  osx_defaults: domain=NSGlobalDomain key=NSDocumentSaveNewDocumentsToCloud type=bool value=false state=present
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: NSDocumentSaveNewDocumentsToCloud
+    type: bool
+    value: false
+    state: present
 
 - name: Avoid automatic smart quote substitution.
-  osx_defaults: domain=NSGlobalDomain key=NSAutomaticQuoteSubstitutionEnabled type=bool value=false state=present
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: NSAutomaticQuoteSubstitutionEnabled
+    type: bool
+    value: false
+    state: present
 
 - name: Avoid automatic smart dash substitution.
-  osx_defaults: domain=NSGlobalDomain key=NSAutomaticDashSubstitutionEnabled type=bool value=false state=present
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: NSAutomaticDashSubstitutionEnabled
+    type: bool
+    value: false
+    state: present
 
 - name: Disable automatic spelling correction.
-  osx_defaults: domain=NSGlobalDomain key=NSAutomaticSpellingCorrectionEnabled type=bool value=false state=present
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: NSAutomaticSpellingCorrectionEnabled
+    type: bool
+    value: false
+    state: present
 
 - name: Save screenshots as PNG files.
-  osx_defaults: domain=com.apple.screencapture key=type type=string value=png state=present
+  osx_defaults:
+    domain: com.apple.screencapture
+    key: type
+    type: string
+    value: png
+    state: present
 
 - name: Disable shadow in screenshot images.
-  osx_defaults: domain=com.apple.screencapture key=disable-shadow type=bool value=true state=present
+  osx_defaults:
+    domain: com.apple.screencapture
+    key: disable-shadow
+    type: bool
+    value: true
+    state: present
 
 - name: Avoid creating .DS_Store files on network volumes.
-  osx_defaults: domain=com.apple.desktopservices key=DSDontWriteNetworkStores type=bool value=true state=present
+  osx_defaults:
+    domain: com.apple.desktopservices
+    key: DSDontWriteNetworkStores
+    type: bool
+    value: true
+    state: present
 
 - name: Install a nice motd.
   get_url: url=https://gist.githubusercontent.com/deekayen/9ef934473e4cf4d50d8b06d2598b24d1/raw/44db58449e42d36360797a05c56243b339f34c11/Drop_lounging.txt dest=/etc/motd

@@ -1,22 +1,57 @@
 ---
 
 - name: Enable Safari's debug menu.
-  osx_defaults: domain=com.apple.Safari key=IncludeInternalDebugMenu type=bool value=true state=present
+  osx_defaults:
+    domain: com.apple.Safari
+    key: IncludeInternalDebugMenu
+    type: bool
+    value: true
+    state: present
 
 - name: Enable the Develop menu in Safari.
-  osx_defaults: domain=com.apple.Safari key=IncludeDevelopMenu type=bool value=true state=present
+  osx_defaults:
+    domain: com.apple.Safari
+    key: IncludeDevelopMenu
+    type: bool
+    value: true
+    state: present
 
 - name: Enable the Web Inspector in Safari.
-  osx_defaults: domain=com.apple.Safari key=WebKitDeveloperExtrasEnabledPreferenceKey type=bool value=true state=present
+  osx_defaults:
+    domain: com.apple.Safari
+    key: WebKitDeveloperExtrasEnabledPreferenceKey
+    type: bool
+    value: true
+    state: present
 
 - name: Enable the WebKit Extras in Safari.
-  osx_defaults: domain=com.apple.Safari key=ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled type=bool value=true state=present
+  osx_defaults:
+    domain: com.apple.Safari
+    key: ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled
+    type: bool
+    value: true
+    state: present
 
 - name: Add context menu item to show the Web Inspector.
-  osx_defaults: domain=NSGlobalDomain key=WebKitDeveloperExtras type=bool value=true state=present
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: WebKitDeveloperExtras
+    type: bool
+    value: true
+    state: present
 
 - name: Send DNT header.
-  osx_defaults: domain=com.apple.Safari key=SendDoNotTrackHTTPHeader type=bool value=true state=present
+  osx_defaults:
+    domain: com.apple.Safari
+    key: SendDoNotTrackHTTPHeader
+    type: bool
+    value: true
+    state: present
 
 - name: Treat SHA-1 certificates as insecure.
-  osx_defaults: domain=com.apple.Safari key=TreatSHA1CertificatesAsInsecure type=bool value=true state=present
+  osx_defaults:
+    domain: com.apple.Safari
+    key: TreatSHA1CertificatesAsInsecure
+    type: bool
+    value: true
+    state: present
