@@ -1,12 +1,10 @@
 ---
 
 homebrew_taps:
-  - caskroom/homebrew-cask
-  - caskroom/homebrew-fonts
-  - homebrew/dupes
-  - homebrew/php
-  - homebrew/versions
-  - jonof/kenutils
+  - { tap: "caskroom/cask", url: "https://github.com/caskroom/homebrew-cask" }
+  - { tap: "caskroom/fonts", url: "https://github.com/caskroom/homebrew-fonts" }
+  - { tap: "homebrew/php", url: "https://github.com/Homebrew/homebrew-php" }
+  - { tap: "jonof/kenutils", url: "https://github.com/jonof/homebrew-kenutils" }
 
 homebrew_packages:
   - ansible
