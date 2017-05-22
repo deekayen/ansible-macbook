@@ -47,7 +47,6 @@ homebrew_cask_apps:
   - amazon-music
   - android-file-transfer
   - atom
-  - audio-hijack
   - avira-antivirus
   - bartender
   - bee
@@ -55,7 +54,6 @@ homebrew_cask_apps:
   - caffeine
   - calibre
   - carbon-copy-cloner
-  - cleanmymac
   - codekit
   - cord
   - dash
@@ -77,7 +75,6 @@ homebrew_cask_apps:
   - font-source-code-pro
   - font-source-sans-pro
   - font-source-serif-pro
-  - fork
   - gimp
   - gitscout
   - gitter
@@ -107,7 +104,6 @@ homebrew_cask_apps:
   - quitter
   - rescuetime
   - ripit
-  - send-to-kindle
   - sequel-pro
   - skitch
   - slack
