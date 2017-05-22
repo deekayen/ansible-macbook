@@ -6,7 +6,7 @@ deekayen-macbook ansible playbook
 Install Homebrew
 ----------------
 
-[Some people make a complicated Ansible role for this](https://github.com/geerlingguy/ansible-role-homebrew/network), but I'm only doing it once, so just run the install command from http://brew.sh/ in Terminal!
+[Some people make a complicated Ansible role for this](https://github.com/geerlingguy/ansible-role-homebrew/network), but I'm only installing Homebrew once, so just run the install command from http://brew.sh/ in Terminal!
 
 Install Ansible
 ---------------
