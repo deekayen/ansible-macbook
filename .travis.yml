@@ -3,4 +3,4 @@ osx_image: xcode8.1
 before_install:
   - brew update
   - brew install ansible
-script: ansible-playbook --check --diff -i localhost, -c local main.yml
+script: ansible-playbook --diff -i localhost, -c local deekayen-macbook.yml
