@@ -16,9 +16,9 @@
   - "{{ homebrew_packages }}"
   register: homebrew_result
   failed_when:
-    - homebrew_result.failed is set
+    - homebrew_result.failed is defined
     - homebrew_result.failed
-    - homebrew_result.msg is set
+    - homebrew_result.msg is defined
     - not 'nothing to install' in homebrew_result.msg
 
 - name: Recklessly upgrade homebrew packages.
