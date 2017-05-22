@@ -1,0 +1,123 @@
+---
+- hosts: localhost
+  connection: local
+
+  vars:
+    homebrew_taps:
+      - { tap: "caskroom/cask", url: "https://github.com/caskroom/homebrew-cask" }
+      - { tap: "caskroom/fonts", url: "https://github.com/caskroom/homebrew-fonts" }
+      - { tap: "jonof/kenutils", url: "https://github.com/jonof/homebrew-kenutils" }
+
+    homebrew_packages:
+      - ansible
+      - autoconf
+      - awscli
+      - bash
+      - dos2unix
+      - drush
+      - ffmpeg
+      - git
+      - git-lfs
+      - gnupg
+      - gnupg2
+      - gpg-agent
+      - htop-osx
+      - jp2a
+      - libav
+      - mcrypt
+      - md5sha1sum
+      - mosh
+      - nmap
+      - openssh
+      - openssl
+      - pandoc
+      - pngout
+      - pre-commit
+      - pwgen
+      - unix2dos
+      - unrar
+      - wget
+
+    homebrew_cask_apps:
+      - alarm-clock
+      - alfred
+      - android-file-transfer
+      - atom
+      - audio-hijack
+      - avira-antivirus
+      - bartender
+      - bee
+      - blueharvest
+      - caffeine
+      - cleanmymac
+      - cord
+      - dash
+      - divvy
+      - endurance
+      - expandrive
+      - filezilla
+      - firefox
+      - flash-player
+      - flip4mac
+      - flux
+      - focused
+      - font-anonymous-pro
+      - font-bitstream-vera
+      - font-hack
+      - font-lato
+      - font-source-code-pro
+      - font-source-sans-pro
+      - font-source-serif-pro
+      - fork
+      - gimp
+      - gitscout
+      - gitter
+      - google-chrome
+      - hex-fiend
+      - hobo
+      - horndis
+      - imageoptim
+      - istat-menus
+      - iterm2
+      - java
+      - kaleidoscope
+      - keepassx
+      - lastpass
+      - libreoffice
+      - limechat
+      - lockdown
+      - omnifocus
+      - omnigraffle
+      - omnioutliner
+      - quitter
+      - rescuetime
+      - send-to-kindle
+      - sequel-pro
+      - skitch
+      - slack
+      - smartgit
+      - smartsynchronize
+      - sourcetree
+      - sparkleshare
+      - synergy
+      - torbrowser
+      - tower
+      - vagrant
+      - vagrant-manager
+      - virtualbox
+      - virtualbox-extension-pack
+      - virtualhostx
+      - visual-studio-code
+      - vmware-fusion
+      - vmware-remote-console
+
+  roles:
+    - finder
+    - macos
+    - safari
+    - screensaver
+    - homebrew
+    - bin
+    - flux
+    - gitter
+    - google-chrome
