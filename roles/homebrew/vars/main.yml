@@ -1,8 +1,8 @@
 ---
 
 homebrew_taps:
-  - caskroom/cask
-  - caskroom/fonts
+  - caskroom/homebrew-cask
+  - caskroom/homebrew-fonts
   - homebrew/dupes
   - homebrew/php
   - homebrew/versions
