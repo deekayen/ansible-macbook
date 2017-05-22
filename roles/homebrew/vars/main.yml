@@ -46,6 +46,7 @@ homebrew_cask_apps:
   - adobe-reader
   - alarm-clock
   - alfred
+  - alternote
   - amazon-drive
   - amazon-music
   - android-file-transfer
@@ -131,4 +132,6 @@ homebrew_cask_apps:
   - virtualbox-extension-pack
   - virtualhostx
   - viscosity
+  - visual-studio-code
   - vmware-fusion
+  - vmware-remote-console
