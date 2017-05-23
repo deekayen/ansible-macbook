@@ -17,14 +17,12 @@ install:
   - brew install ansible-lint
   - pip install ansible-review
   - pip install yamllint
-  - sudo gem install mdl
 
 before_script:
   - yamllint --version
   - ansible-lint --version
   - ansible-review --version
   - ansible --version
-  - mdl --version
 
 script:
   - yamllint .
@@ -33,4 +31,3 @@ script:
   - git ls-files | grep yml | grep -v vars | xargs ansible-review -q
   - ansible-playbook --check --diff -i localhost, -c local deekayen-macbook.yml
   - ansible-playbook --check --diff -i localhost, -c local dnorman-macbook.yml
-  - mdl -gv ./
