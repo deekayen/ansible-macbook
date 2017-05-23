@@ -1,9 +1,11 @@
-language: python
-os: osx
 matrix:
   include:
-    - osx_image: xcode8.3
-    - osx_image: xcode8
+    - os: osx
+      osx_image: xcode8.3
+      language: generic
+    - os: osx
+      osx_image: xcode8
+      language: generic
 before_install:
   - brew update
   - brew install ansible
