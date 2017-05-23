@@ -6,44 +6,51 @@ matrix:
     - os: osx
       osx_image: xcode8
       language: generic
-before_install:
-  - brew update
-
-install:
-  - brew install ansible
-  - brew install ansible-lint
-  - pip install ansible-review
-  - pip install yamllint
-  - sudo gem install mdl
-
-before_script:
-  - yamllint --version
-  - ansible-lint --version
-  - ansible-review --version
-  - ansible --version
-  - mdl --version
 
 jobs:
   include:
     - stage: yamllint
+      install:
+        - pip install yamllint
+      before_script:
+        - yamllint --version
       script:
-      - yamllint .
+        - yamllint .
 
     - stage: ansible-lint
+      before_install:
+        - brew update
+      install:
+        - brew install ansible-lint
+      before_script:
+        - ansible-lint --version
       script:
-      - ansible-lint -v deekayen-macbook.yml
-      - ansible-lint -v dnorman-macbook.yml
+        - ansible-lint -v deekayen-macbook.yml
+        - ansible-lint -v dnorman-macbook.yml
 
     - stage: ansible-review
+      install:
+        - pip install ansible-review
+      before_script:
+        - ansible-review --version
       script:
-      - git ls-files | grep yml | grep -v vars | xargs ansible-review -q
+        - git ls-files | grep yml | grep -v vars | xargs ansible-review -q
 
     - stage: ansible-playbook
+      before_install:
+        - brew update
+      install:
+        - brew install ansible
+      before_script:
+        - ansible --version
       script:
-      - ansible-playbook --check --diff -i localhost, -c local deekayen-macbook.yml
-      - ansible-playbook --check --diff -i localhost, -c local dnorman-macbook.yml
+        - ansible-playbook --check --diff -i localhost, -c local deekayen-macbook.yml
+        - ansible-playbook --check --diff -i localhost, -c local dnorman-macbook.yml
 
     - stage: mdl
+      install:
+        - sudo gem install mdl
+      before_script:
+        - mdl --version
       script:
-      - mdl -gv ./
-
+        - mdl -gv ./
