@@ -16,13 +16,13 @@
     value: 0
     state: present
 
-- name: Show the clock on the screensaver.
+- name: Hide the clock on the screensaver.
   osx_defaults:
     domain: com.apple.screensaver
     host: currentHost
     key: showClock
     type: bool
-    value: true
+    value: false
     state: present
 
 - name: Check for Anèmona install.
