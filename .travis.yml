@@ -8,5 +8,42 @@ matrix:
       language: generic
 before_install:
   - brew update
+
+install:
   - brew install ansible
-script: ansible-playbook --diff -i localhost, -c local deekayen-macbook.yml
+  - brew install ansible-lint
+  - pip install ansible-review
+  - pip install yamllint
+  - sudo gem install mdl
+
+before_script:
+  - yamllint --version
+  - ansible-lint --version
+  - ansible-review --version
+  - ansible --version
+  - mdl --version
+
+jobs:
+  include:
+    - stage: yamllint
+      script:
+      - yamllint .
+
+    - stage: ansible-lint
+      script:
+      - ansible-lint -v deekayen-macbook.yml
+      - ansible-lint -v dnorman-macbook.yml
+
+    - stage: ansible-review
+      script:
+      - git ls-files | grep yml | grep -v vars | xargs ansible-review -q
+
+    - stage: ansible-playbook
+      script:
+      - ansible-playbook --check --diff -i localhost, -c local deekayen-macbook.yml
+      - ansible-playbook --check --diff -i localhost, -c local dnorman-macbook.yml
+
+    - stage: mdl
+      script:
+      - mdl -gv ./
+
