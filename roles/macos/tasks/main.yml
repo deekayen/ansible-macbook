@@ -57,5 +57,7 @@
     state: present
 
 - name: Install a nice motd.
-  get_url: url=https://gist.githubusercontent.com/deekayen/9ef934473e4cf4d50d8b06d2598b24d1/raw/44db58449e42d36360797a05c56243b339f34c11/Drop_lounging.txt dest=/etc/motd
+  get_url:
+    url: https://gist.githubusercontent.com/deekayen/9ef934473e4cf4d50d8b06d2598b24d1/raw/44db58449e42d36360797a05c56243b339f34c11/Drop_lounging.txt
+    dest: /etc/motd
   become: true

@@ -9,9 +9,9 @@
     - screensaver
     - role: homebrew
       homebrew_taps:
-        - { tap: "caskroom/cask", url: "https://github.com/caskroom/homebrew-cask" }
-        - { tap: "caskroom/fonts", url: "https://github.com/caskroom/homebrew-fonts" }
-        - { tap: "jonof/kenutils", url: "https://github.com/jonof/homebrew-kenutils" }
+        - {tap: "caskroom/cask", url: "https://github.com/caskroom/homebrew-cask"}
+        - {tap: "caskroom/fonts", url: "https://github.com/caskroom/homebrew-fonts"}
+        - {tap: "jonof/kenutils", url: "https://github.com/jonof/homebrew-kenutils"}
 
       homebrew_packages:
         - ansible

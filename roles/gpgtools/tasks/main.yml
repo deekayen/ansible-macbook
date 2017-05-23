@@ -66,4 +66,3 @@
     type: bool
     value: yes
     state: present
-
