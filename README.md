@@ -40,6 +40,3 @@ https://github.com/stephenway/monokai.terminal
 
 Add default config and packages for Sublime (e.g.):
 https://packagecontrol.io/packages/Base16%20Color%20Schemes
-
-Add Adobe Source font series (e.g.):
-https://github.com/adobe-fonts/source-code-pro
