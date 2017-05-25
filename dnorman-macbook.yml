@@ -37,6 +37,7 @@
         - gpg-agent
         - htop-osx
         - jp2a
+        - krb5
         - libav
         - mcrypt
         - md5sha1sum
