@@ -35,7 +35,6 @@ homebrew_cask_apps:
   - atom
   - caffeine
   - divvy
-  - flux
   - font-anonymous-pro
   - font-bitstream-vera
   - font-hack

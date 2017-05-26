@@ -1,9 +1,0 @@
----
-
-- name: Enable automatic software update installs.
-  osx_defaults:
-    domain: org.herf.Flux
-    key: SUAutomaticallyUpdate
-    type: bool
-    value: true
-    state: present

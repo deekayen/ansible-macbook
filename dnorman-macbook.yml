@@ -72,7 +72,6 @@
         - firefox
         - flash-player
         - flip4mac
-        - flux
         - focused
         - font-anonymous-pro
         - font-bitstream-vera
@@ -116,6 +115,5 @@
         - virtualbox-extension-pack
 
     - bin
-    - flux
     - google-chrome
     - motd
