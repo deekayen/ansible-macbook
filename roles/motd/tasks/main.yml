@@ -1,0 +1,7 @@
+---
+
+- name: Install a nice motd.
+  get_url:
+    url: "{{ motd_url }}"
+    dest: /etc/motd
+  become: true
