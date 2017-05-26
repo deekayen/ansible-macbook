@@ -45,6 +45,6 @@ homebrew_cask_apps:
   - font-source-serif-pro
   - google-chrome
   - imageoptim
-  - lockdown
+  - prefs-editor
   - skitch
   - torbrowser
