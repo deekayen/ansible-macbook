@@ -8,7 +8,7 @@
     value: 1
     state: present
 
-- name: Set screensaver password prompt to 0 second delay.
+- name: Set screensaver password prompt to 5 second delay.
   osx_defaults:
     domain: com.apple.screensaver
     key: askForPasswordDelay
