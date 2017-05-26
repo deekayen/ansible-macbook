@@ -13,7 +13,7 @@
     domain: com.apple.screensaver
     key: askForPasswordDelay
     type: float
-    value: 0
+    value: 5
     state: present
 
 - name: Hide the clock on the screensaver.
