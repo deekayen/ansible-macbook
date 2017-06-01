@@ -88,9 +88,9 @@
         - owncloud
         - rescuetime
         - slack
+        - smartgit
         - sparkleshare
         - torbrowser
-        - tower
         - viscosity
 
     - bin
