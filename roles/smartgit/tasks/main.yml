@@ -1,0 +1,21 @@
+---
+
+- name: Install SmartGit.
+  homebrew_cask:
+    name: "smargit"
+    state: present
+
+- name: Install git and git-lfs.
+  homebrew:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - git
+    - git-lfs
+
+# https://groups.google.com/forum/#!topic/smartgit/PXaIRQJS_HU
+# https://www.syntevo.com/doc/display/SG071/VM+options#VMoptions-ExtendedPATH
+- name: "Add git-lfs to the smartgit.vmoptions path."
+  lineinfile:
+    path: "{{ smartgit_user_home }}/Library/Preferences/SmartGit/smartgit.vmoptions"
+    line: "path={{ smartgit_path }}"

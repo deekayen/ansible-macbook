@@ -106,6 +106,8 @@
         - virtualbox
         - virtualbox-extension-pack
 
+    - role: smargit
+      smartgit_user_home: /Users/dnorman
     - bin
     - google-chrome
     - motd
