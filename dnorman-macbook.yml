@@ -106,7 +106,7 @@
         - virtualbox
         - virtualbox-extension-pack
 
-    - role: smargit
+    - role: smartgit
       smartgit_user_home: /Users/dnorman
     - bin
     - google-chrome
