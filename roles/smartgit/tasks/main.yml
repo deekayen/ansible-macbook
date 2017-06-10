@@ -24,4 +24,4 @@
   lineinfile:
     path: "{{ smartgit_user_home }}/Library/Preferences/SmartGit/smartgit.vmoptions"
     line: "path={{ smartgit_path }}"
-    when: not ansible_check_mode
+  when: not ansible_check_mode
