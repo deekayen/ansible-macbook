@@ -25,6 +25,7 @@ homebrew_packages:
   - nmap
   - openssh
   - openssl
+  - osquery
   - pre-commit
   - pwgen
   - unix2dos
