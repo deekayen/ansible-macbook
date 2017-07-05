@@ -2,143 +2,133 @@
 - hosts: localhost
   connection: local
 
+  vars:
+    homebrew_installed_packages:
+      - ansible
+      - ansible-lint
+      - autoconf
+      - awscli
+      - bash
+      - dos2unix
+      - drush
+      - ffmpeg
+      - git
+      - git-lfs
+      - gnupg
+      - gnupg2
+      - gpg-agent
+      - htop-osx
+      - jp2a
+      - libav
+      - libdvdcss
+      - mcrypt
+      - md5sha1sum
+      - mosh
+      - nmap
+      - openssh
+      - openssl
+      - pandoc
+      - pngout
+      - pre-commit
+      - pwgen
+      - ruby
+      - unix2dos
+      - unrar
+      - wget
+      - youtube-dl
+    homebrew_upgrade_all_packages: yes
+    homebrew_taps:
+      - caskroom/cask
+      - caskroom/fonts
+      - homebrew/php
+      - jonof/kenutils
+    homebrew_cask_apps:
+      - 1password
+      - alarm-clock
+      - alfred
+      - amazon-drive
+      - amazon-music
+      - android-file-transfer
+      - atom
+      - authy-desktop
+      - bartender
+      - bee
+      - blueharvest
+      - caffeine
+      - calibre
+      - carbon-copy-cloner
+      - codekit
+      - cord
+      - dash
+      - divvy
+      - dropbox
+      - electrum
+      - endurance
+      - expandrive
+      - filezilla
+      - firefox
+      - flash-player
+      - flip4mac
+      - focused
+      - font-anonymous-pro
+      - font-bitstream-vera
+      - font-hack
+      - font-lato
+      - font-source-code-pro
+      - font-source-sans-pro
+      - font-source-serif-pro
+      - gimp
+      - gitter
+      - google-chrome
+      - google-drive
+      - gpgtools
+      - handbrake
+      - hex-fiend
+      - hobo
+      - horndis
+      - imageoptim
+      - istat-menus
+      - iterm2
+      - java
+      - kaleidoscope
+      - kindle
+      - kindlegen
+      - lastpass
+      - libreoffice
+      - limechat
+      - omnifocus
+      - omnigraffle
+      - omnioutliner
+      - owncloud
+      - prefs-editor
+      - rescuetime
+      - ripit
+      - sequel-pro
+      - skitch
+      - slack
+      - smartgit
+      - sourcetree
+      - sparkleshare
+      - synergy
+      - thunderbird
+      - torbrowser
+      - tower
+      - transmission
+      - ukelele
+      - vagrant
+      - vagrant-manager
+      - virtualbox
+      - virtualbox-extension-pack
+      - virtualhostx
+      - viscosity
+
   roles:
     - finder
     - macos
     - safari
     - screensaver
-    - role: homebrew
-      homebrew_taps:
-        - {
-          tap: "caskroom/cask",
-          url: "https://github.com/caskroom/homebrew-cask"
-        }
-        - {
-          tap: "caskroom/fonts",
-          url: "https://github.com/caskroom/homebrew-fonts"
-        }
-        - {
-          tap: "homebrew/php",
-          url: "https://github.com/Homebrew/homebrew-php"
-        }
-        - {
-          tap: "jonof/kenutils",
-          url: "https://github.com/jonof/homebrew-kenutils"
-        }
-
-      homebrew_packages:
-        - ansible
-        - ansible-lint
-        - autoconf
-        - awscli
-        - bash
-        - dos2unix
-        - drush
-        - ffmpeg
-        - git
-        - git-lfs
-        - gnupg
-        - gnupg2
-        - gpg-agent
-        - htop-osx
-        - jp2a
-        - libav
-        - libdvdcss
-        - mcrypt
-        - md5sha1sum
-        - mosh
-        - nmap
-        - openssh
-        - openssl
-        - pandoc
-        - pngout
-        - pre-commit
-        - pwgen
-        - unix2dos
-        - unrar
-        - wget
-        - youtube-dl
-
-      homebrew_cask_apps:
-        - 1password
-        - alarm-clock
-        - alfred
-        - amazon-drive
-        - amazon-music
-        - android-file-transfer
-        - atom
-        - authy-desktop
-        - bartender
-        - bee
-        - blueharvest
-        - caffeine
-        - calibre
-        - carbon-copy-cloner
-        - codekit
-        - cord
-        - dash
-        - divvy
-        - dropbox
-        - electrum
-        - endurance
-        - expandrive
-        - filezilla
-        - firefox
-        - flash-player
-        - flip4mac
-        - focused
-        - font-anonymous-pro
-        - font-bitstream-vera
-        - font-hack
-        - font-lato
-        - font-source-code-pro
-        - font-source-sans-pro
-        - font-source-serif-pro
-        - gimp
-        - gitter
-        - google-chrome
-        - google-drive
-        - gpgtools
-        - handbrake
-        - hex-fiend
-        - hobo
-        - horndis
-        - imageoptim
-        - istat-menus
-        - iterm2
-        - java
-        - kaleidoscope
-        - kindle
-        - kindlegen
-        - lastpass
-        - libreoffice
-        - limechat
-        - omnifocus
-        - omnigraffle
-        - omnioutliner
-        - owncloud
-        - prefs-editor
-        - rescuetime
-        - ripit
-        - sequel-pro
-        - skitch
-        - slack
-        - smartgit
-        - sourcetree
-        - sparkleshare
-        - synergy
-        - thunderbird
-        - torbrowser
-        - tower
-        - transmission
-        - ukelele
-        - vagrant
-        - vagrant-manager
-        - virtualbox
-        - virtualbox-extension-pack
-        - virtualhostx
-        - viscosity
-
+    - geerlingguy.homebrew
+    - jekyll
     - smartgit
     - bin
     - gitter
