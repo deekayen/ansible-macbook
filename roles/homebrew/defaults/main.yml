@@ -28,6 +28,7 @@ homebrew_packages:
   - osquery
   - pre-commit
   - pwgen
+  - ruby
   - unix2dos
   - unrar
   - wget
