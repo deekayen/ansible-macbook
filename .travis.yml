@@ -23,6 +23,7 @@ before_script:
   - ansible-lint --version
   - ansible-review --version
   - ansible --version
+  - ansible-galaxy install geerlingguy.homebrew
 
 script:
   - yamllint .
