@@ -1,0 +1,9 @@
+---
+
+- name: Install Ruby.
+  homebrew:
+    name: ruby
+
+- name: Install Jekyll gem.
+  gem:
+    name: jekyll
