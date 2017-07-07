@@ -17,7 +17,7 @@ install:
   - brew install ansible-lint
   - pip install ansible-review
   - pip install yamllint
-  - ansible-galaxy install geerlingguy.homebrew
+  - sudo ansible-galaxy install geerlingguy.homebrew
 
 before_script:
   - yamllint --version

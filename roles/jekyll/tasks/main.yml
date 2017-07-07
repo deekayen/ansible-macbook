@@ -4,6 +4,16 @@
   homebrew:
     name: ruby
 
+- name: Update rubygems.
+  shell: gem update --system
+  become: true
+
 - name: Install Jekyll gem.
   gem:
     name: jekyll
+  become: true
+
+- name: Install bundler gem.
+  gem:
+    name: bundler
+  become: true
