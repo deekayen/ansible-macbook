@@ -2,111 +2,104 @@
 - hosts: localhost
   connection: local
 
+  vars:
+    homebrew_installed_packages:
+      - ansible
+      - ansible-lint
+      - autoconf
+      - awscli
+      - bash
+      - dos2unix
+      - ffmpeg
+      - git
+      - git-lfs
+      - gnupg
+      - gnupg2
+      - gpg-agent
+      - htop-osx
+      - jp2a
+      - krb5
+      - mcrypt
+      - md5sha1sum
+      - mosh
+      - nmap
+      - openssh
+      - openssl
+      - osquery
+      - pngout
+      - pre-commit
+      - pwgen
+      - unix2dos
+      - unrar
+      - wget
+    homebrew_taps:
+      - caskroom/cask
+      - caskroom/fonts
+      - jonof/kenutils
+    homebrew_cask_apps:
+      - alarm-clock
+      - alfred
+      - android-file-transfer
+      - atom
+      - bartender
+      - bee
+      - blueharvest
+      - boinc
+      - caffeine
+      - cord
+      - dash
+      - divvy
+      - eclipse-ide
+      - endurance
+      - expandrive
+      - filezilla
+      - firefox
+      - flash-player
+      - flip4mac
+      - focused
+      - font-anonymous-pro
+      - font-bitstream-vera
+      - font-hack
+      - font-lato
+      - font-source-code-pro
+      - font-source-sans-pro
+      - font-source-serif-pro
+      - gimp
+      - google-chrome
+      - hex-fiend
+      - hobo
+      - horndis
+      - imageoptim
+      - istat-menus
+      - iterm2
+      - java
+      - kaleidoscope
+      - keepassx
+      - lastpass
+      - muzzle
+      - omnigraffle
+      - omnioutliner
+      - rescuetime
+      - sequel-pro
+      - skitch
+      - slack
+      - smartgit
+      - sourcetree
+      - sparkleshare
+      - synergy
+      - torbrowser
+      - vagrant
+      - vagrant-manager
+      - virtualbox
+      - virtualbox-extension-pack
+    homebrew_upgrade_all_packages: yes
+
   roles:
     - finder
     - macos
     - safari
     - screensaver
-    - role: homebrew
-      homebrew_taps:
-        - {
-          tap: "caskroom/cask",
-          url: "https://github.com/caskroom/homebrew-cask"
-        }
-        - {
-          tap: "caskroom/fonts",
-          url: "https://github.com/caskroom/homebrew-fonts"
-        }
-        - {
-          tap: "jonof/kenutils",
-          url: "https://github.com/jonof/homebrew-kenutils"
-        }
-
-      homebrew_packages:
-        - ansible
-        - ansible-lint
-        - autoconf
-        - awscli
-        - bash
-        - dos2unix
-        - ffmpeg
-        - git
-        - git-lfs
-        - gnupg
-        - gnupg2
-        - gpg-agent
-        - htop-osx
-        - jp2a
-        - krb5
-        - mcrypt
-        - md5sha1sum
-        - mosh
-        - nmap
-        - openssh
-        - openssl
-        - pngout
-        - pre-commit
-        - pwgen
-        - unix2dos
-        - unrar
-        - wget
-
-      homebrew_cask_apps:
-        - alarm-clock
-        - alfred
-        - android-file-transfer
-        - atom
-        - bartender
-        - bee
-        - blueharvest
-        - boinc
-        - caffeine
-        - cord
-        - dash
-        - divvy
-        - eclipse-ide
-        - endurance
-        - expandrive
-        - filezilla
-        - firefox
-        - flash-player
-        - flip4mac
-        - focused
-        - font-anonymous-pro
-        - font-bitstream-vera
-        - font-hack
-        - font-lato
-        - font-source-code-pro
-        - font-source-sans-pro
-        - font-source-serif-pro
-        - gimp
-        - google-chrome
-        - hex-fiend
-        - hobo
-        - horndis
-        - imageoptim
-        - istat-menus
-        - iterm2
-        - java
-        - kaleidoscope
-        - keepassx
-        - lastpass
-        - omnigraffle
-        - omnioutliner
-        - rescuetime
-        - sequel-pro
-        - skitch
-        - slack
-        - smartgit
-        - sourcetree
-        - sparkleshare
-        - synergy
-        - torbrowser
-        - vagrant
-        - vagrant-manager
-        - virtualbox
-        - virtualbox-extension-pack
-
+    - geerlingguy.homebrew
     - role: smartgit
       smartgit_user_home: /Users/dnorman
     - bin

@@ -2,98 +2,90 @@
 - hosts: localhost
   connection: local
 
+  vars:
+    homebrew_taps:
+      - caskroom/cask
+      - caskroom/fonts
+      - jonof/kenutils
+    homebrew_installed_packages:
+      - ansible
+      - ansible-lint
+      - autoconf
+      - awscli
+      - bash
+      - dos2unix
+      - ffmpeg
+      - git
+      - git-lfs
+      - gnupg
+      - gnupg2
+      - gpg-agent
+      - htop-osx
+      - jp2a
+      - libav
+      - mcrypt
+      - md5sha1sum
+      - mosh
+      - nmap
+      - openssh
+      - openssl
+      - pngout
+      - pre-commit
+      - pwgen
+      - unix2dos
+      - unrar
+      - wget
+      - youtube-dl
+    homebrew_cask_apps:
+      - alfred
+      - android-file-transfer
+      - atom
+      - bartender
+      - blueharvest
+      - dash
+      - divvy
+      - expandrive
+      - filezilla
+      - firefox
+      - flash-player
+      - flip4mac
+      - font-anonymous-pro
+      - font-bitstream-vera
+      - font-hack
+      - font-lato
+      - font-source-code-pro
+      - font-source-sans-pro
+      - font-source-serif-pro
+      - gimp
+      - gitter
+      - imageoptim
+      - istat-menus
+      - iterm2
+      - java
+      - kaleidoscope
+      - kindle
+      - kindlegen
+      - lastpass
+      - libreoffice
+      - limechat
+      - muzzle
+      - omnifocus
+      - owncloud
+      - prefs-editor
+      - rescuetime
+      - slack
+      - smartgit
+      - sparkleshare
+      - torbrowser
+      - viscosity
+    homebrew_upgrade_all_packages: yes
+
   roles:
     - finder
     - macos
     - safari
     - screensaver
-    - role: homebrew
-      homebrew_taps:
-        - {
-          tap: "caskroom/cask",
-          url: "https://github.com/caskroom/homebrew-cask"
-        }
-        - {
-          tap: "caskroom/fonts",
-          url: "https://github.com/caskroom/homebrew-fonts"
-        }
-        - {
-          tap: "jonof/kenutils",
-          url: "https://github.com/jonof/homebrew-kenutils"
-        }
-
-      homebrew_packages:
-        - ansible
-        - ansible-lint
-        - autoconf
-        - awscli
-        - bash
-        - dos2unix
-        - ffmpeg
-        - git
-        - git-lfs
-        - gnupg
-        - gnupg2
-        - gpg-agent
-        - htop-osx
-        - jp2a
-        - libav
-        - mcrypt
-        - md5sha1sum
-        - mosh
-        - nmap
-        - openssh
-        - openssl
-        - pngout
-        - pre-commit
-        - pwgen
-        - unix2dos
-        - unrar
-        - wget
-        - youtube-dl
-
-      homebrew_cask_apps:
-        - alfred
-        - android-file-transfer
-        - atom
-        - bartender
-        - blueharvest
-        - dash
-        - divvy
-        - expandrive
-        - filezilla
-        - firefox
-        - flash-player
-        - flip4mac
-        - font-anonymous-pro
-        - font-bitstream-vera
-        - font-hack
-        - font-lato
-        - font-source-code-pro
-        - font-source-sans-pro
-        - font-source-serif-pro
-        - gimp
-        - gitter
-        - imageoptim
-        - istat-menus
-        - iterm2
-        - java
-        - kaleidoscope
-        - kindle
-        - kindlegen
-        - lastpass
-        - libreoffice
-        - limechat
-        - omnifocus
-        - owncloud
-        - prefs-editor
-        - rescuetime
-        - slack
-        - smartgit
-        - sparkleshare
-        - torbrowser
-        - viscosity
-
+    - geerlingguy.homebrew
     - smartgit
     - bin
     - gitter
