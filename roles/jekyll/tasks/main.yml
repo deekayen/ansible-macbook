@@ -3,10 +3,14 @@
 - name: Install Ruby.
   homebrew:
     name: ruby
+  register: ruby_install
 
 - name: Update rubygems.
   shell: gem update --system
   become: true
+  tags:
+    - skip_ansible_lint
+  when: ruby_install.changed
 
 - name: Install Jekyll gem.
   gem:
