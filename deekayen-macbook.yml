@@ -18,6 +18,7 @@
       - gnupg2
       - gpg-agent
       - htop-osx
+      - hugo
       - jp2a
       - libav
       - libdvdcss
@@ -128,7 +129,6 @@
     - safari
     - screensaver
     - geerlingguy.homebrew
-    - jekyll
     - smartgit
     - bin
     - gitter
