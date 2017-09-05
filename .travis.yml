@@ -11,11 +11,12 @@ matrix:
 
 before_install:
   - brew update
+  - rvm get head
+  - wget https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py
 
 install:
   - brew install ansible
   - brew install ansible-lint
-  - wget https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py
   - sudo python /tmp/get-pip.py
   - pip install ansible-review
   - pip install yamllint
