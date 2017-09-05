@@ -15,6 +15,8 @@ before_install:
 install:
   - brew install ansible
   - brew install ansible-lint
+  - wget https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py
+  - python /tmp/get-pip.py
   - pip install ansible-review
   - pip install yamllint
   - sudo ansible-galaxy install geerlingguy.homebrew && sudo rm -fr /Users/travis/.ansible
