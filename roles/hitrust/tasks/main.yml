@@ -1,0 +1,35 @@
+---
+
+- name: Require password screensaver when waking from screensaver.
+  osx_defaults:
+    domain: com.apple.screensaver
+    key: askForPassword
+    type: int
+    value: 1
+    state: present
+
+- name: Launch screensaver after 2 minutes of idle time.
+  osx_defaults:
+    domain: com.apple.screensaver
+    key: idleTime
+    host: currentHost
+    type: int
+    value: 120
+    state: present
+
+- name: Logout after 90 minutes of inactivity.
+  osx_defaults:
+    domain: com.apple.autologout
+    key: AutoLogOutDelay
+    type: float
+    value: 5400
+    state: present
+
+- name: Turn off Bluetooth.
+  osx_defaults:
+    domain: com.apple.Bluetooth
+    key: ControllerPowerState
+    host: currentHost
+    type: int
+    value: 0
+    state: present
