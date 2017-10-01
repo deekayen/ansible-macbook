@@ -85,7 +85,6 @@
       - gpgtools
       - handbrake
       - hex-fiend
-      - hobo
       - horndis
       - imageoptim
       - istat-menus
@@ -106,11 +105,8 @@
       - ripit
       - sequel-pro
       - skitch
-      - slack
       - smartgit
       - sourcetree
-      - sparkleshare
-      - synergy
       - thunderbird
       - torbrowser
       - tower
@@ -120,7 +116,6 @@
       - vagrant-manager
       - virtualbox
       - virtualbox-extension-pack
-      - virtualhostx
       - viscosity
 
   roles:
