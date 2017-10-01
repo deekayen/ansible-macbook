@@ -86,6 +86,7 @@
       - sourcetree
       - sparkleshare
       - synergy
+      - terraform
       - torbrowser
       - vagrant
       - vagrant-manager
