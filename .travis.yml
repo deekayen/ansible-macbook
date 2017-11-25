@@ -22,7 +22,7 @@ install:
   - brew install ansible-lint
   - sudo python /tmp/get-pip.py
   - sudo pip install ansible-review
-  - pip install yamllint
+  - sudo pip install yamllint
   - sudo ansible-galaxy install geerlingguy.homebrew && sudo rm -fr /Users/travis/.ansible
 
 before_script:
