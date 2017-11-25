@@ -1,0 +1,5 @@
+--
+
+- src: git+https://github.com/geerlingguy/ansible-role-homebrew.git
+  version: b6f79a0cc49a9004e547a5bddcef2e29a5387128
+  name: geerlingguy.homebrew

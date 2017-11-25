@@ -1,7 +1,7 @@
 ---
 
-- repo: https://github.com/willthames/ansible-lint.git
-  sha: v3.4.17
+- repo: https://github.com/willthames/ansible-review.git
+  sha: v0.13.4
   hooks:
-    - id: ansible-lint
+    - id: ansible-review
       files: \.(yaml|yml)$

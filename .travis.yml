@@ -23,7 +23,7 @@ install:
   - sudo python /tmp/get-pip.py
   - sudo pip install ansible-review
   - sudo pip install yamllint
-  - sudo ansible-galaxy install geerlingguy.homebrew && sudo rm -fr /Users/travis/.ansible
+  - ansible-galaxy install -r roles/requirements.yml
 
 before_script:
   - yamllint --version
