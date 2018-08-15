@@ -61,8 +61,6 @@
       - dash
       - divvy
       - dropbox
-      - electrum
-      - endurance
       - etcher
       - expandrive
       - firefox
@@ -92,14 +90,13 @@
       - libreoffice
       - muzzle
       - omnifocus
-      - omnigraffle
-      - omnioutliner
       - owncloud
       - ripit
       - skitch
+      - smartgit
+      - sparkleshare
       - thunderbird
       - torbrowser
-      - tower
       - transmission
       - ukelele
       - vagrant

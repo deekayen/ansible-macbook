@@ -55,7 +55,6 @@
       - font-source-sans-pro
       - font-source-serif-pro
       - gimp
-      - gitter
       - imageoptim
       - istat-menus
       - iterm2
@@ -69,9 +68,7 @@
       - omnifocus
       - owncloud
       - prefs-editor
-      - slack
       - smartgit
-      - sparkleshare
       - torbrowser
       - viscosity
     homebrew_upgrade_all_packages: yes
