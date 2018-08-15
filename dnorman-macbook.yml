@@ -6,9 +6,11 @@
     homebrew_installed_packages:
       - ansible
       - ansible-lint
+      - ant
       - autoconf
       - awscli
       - bash
+      - cowsay
       - dos2unix
       - ffmpeg
       - git
@@ -19,12 +21,14 @@
       - htop-osx
       - jp2a
       - krb5
+      - maven
       - mcrypt
       - md5sha1sum
       - mosh
       - nmap
       - openssh
       - openssl
+      - openssl@1.1
       - osquery
       - pngout
       - pre-commit
@@ -37,20 +41,16 @@
       - caskroom/fonts
       - jonof/kenutils
     homebrew_cask_apps:
-      - alarm-clock
+      - 1password
       - alfred
       - android-file-transfer
       - atom
       - bartender
-      - bee
       - blueharvest
-      - boinc
       - caffeine
-      - cord
       - dash
       - divvy
       - eclipse-ide
-      - endurance
       - expandrive
       - filezilla
       - firefox
@@ -62,34 +62,19 @@
       - font-source-sans-pro
       - font-source-serif-pro
       - gimp
-      - google-chrome
-      - hex-fiend
-      - hobo
+      - gpgtools
       - horndis
       - imageoptim
       - istat-menus
       - iterm2
       - java
-      - kaleidoscope
       - keepassx
       - lastpass
       - muzzle
-      - omnigraffle
-      - omnioutliner
       - rescuetime
-      - sequel-pro
       - skitch
-      - slack
       - smartgit
       - sourcetree
-      - sparkleshare
-      - synergy
-      - terraform
-      - torbrowser
-      - vagrant
-      - vagrant-manager
-      - virtualbox
-      - virtualbox-extension-pack
     homebrew_upgrade_all_packages: yes
 
   roles:
