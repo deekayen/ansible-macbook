@@ -43,13 +43,17 @@
     homebrew_cask_apps:
       - 1password
       - alfred
+      - amazon-chime
       - android-file-transfer
       - atom
       - bartender
+      - bee
       - blueharvest
       - caffeine
       - dash
+      - db-browser-for-sqlite
       - divvy
+      - docker
       - eclipse-ide
       - expandrive
       - filezilla
@@ -62,19 +66,30 @@
       - font-source-sans-pro
       - font-source-serif-pro
       - gimp
-      - gpgtools
       - horndis
       - imageoptim
       - istat-menus
       - iterm2
       - java
+      - karabiner-elements
       - keepassx
+      - keka
+      - kitematic
       - lastpass
+      - libreoffice
+      - mute-me
       - muzzle
+      - pgadmin4
+      - postman
       - rescuetime
+      - send-to-kindle
       - skitch
       - smartgit
+      - smartsynchronize
       - sourcetree
+      - sublime-merge
+      - sublime-text
+      - vmware-fusion
     homebrew_upgrade_all_packages: yes
 
   roles:
@@ -89,3 +104,6 @@
     - google-chrome
     - motd
     - hitrust
+
+# safari-fido-u2f
+# https://github.com/Safari-FIDO-U2F/Safari-FIDO-U2F
