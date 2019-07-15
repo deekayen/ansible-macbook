@@ -29,8 +29,7 @@ before_script:
 
 script:
   - yamllint .
-  - ansible-lint -v deekayen-macbook.yml
-  - ansible-lint -v dnorman-macbook.yml
+  - git ls-files | grep yml | xargs ansible-lint
   - git ls-files | grep yml | grep -v vars | xargs ansible-review -q
-  - ansible-playbook --check --diff -i localhost, -c local deekayen-macbook.yml
-  - ansible-playbook --check --diff -i localhost, -c local dnorman-macbook.yml
+  - ls -1 *.yml | xargs ansible-playbook --syntax-check --list-tasks -i 127.0.0.1,
+  - ls -1 *.yml | xargs ansible-playbook --check --diff -i 127.0.0.1, -c local
