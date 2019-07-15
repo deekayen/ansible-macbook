@@ -50,11 +50,8 @@
       - blueharvest
       - caffeine
       - dash
-      - db-browser-for-sqlite
       - divvy
-      - docker
       - eclipse-ide
-      - expandrive
       - filezilla
       - firefox
       - font-anonymous-pro
@@ -89,6 +86,7 @@
       - sourcetree
       - sublime-merge
       - sublime-text
+      - textual
       - vmware-fusion
     homebrew_upgrade_all_packages: yes
 
