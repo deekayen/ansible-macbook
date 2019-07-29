@@ -45,7 +45,6 @@
       - jonof/kenutils
     homebrew_cask_apps:
       - 1password
-      - alarm-clock
       - alfred
       - amazon-drive
       - amazon-music
@@ -61,7 +60,6 @@
       - dash
       - divvy
       - dropbox
-      - etcher
       - expandrive
       - firefox
       - font-anonymous-pro
@@ -72,11 +70,9 @@
       - font-source-sans-pro
       - font-source-serif-pro
       - gimp
-      - google-chrome
       - google-drive
       - gpgtools
       - handbrake
-      - hex-fiend
       - horndis
       - imageoptim
       - istat-menus
@@ -88,22 +84,22 @@
       - kindlegen
       - lastpass
       - libreoffice
-      - muzzle
-      - omnifocus
-      - owncloud
+      - monodraw
+      - protonmail-bridge
+      - protonvpn
       - ripit
+      - signal
       - skitch
+      - slack
       - smartgit
       - sparkleshare
       - thunderbird
       - torbrowser
       - transmission
       - ukelele
-      - vagrant
-      - vagrant-manager
-      - virtualbox
-      - virtualbox-extension-pack
       - viscosity
+      - vlc
+      - yubico-authenticator
 
   roles:
     - finder
