@@ -1,4 +1,4 @@
 --
 
-- name: geerlingguy.homebrew
-  version: 2.9.0
+- role: geerlingguy.homebrew
+  version: 3.0.0
