@@ -45,7 +45,7 @@
 
 - name: Download and install Padbury Clock.
   unarchive:
-    src: http://padbury.me/clock/Padbury-Clock.zip
+    src: https://padbury.app/padbury-clock.zip
     dest: "{{ screensaver_home }}"
     copy: no
   register: padbury_clock_download
