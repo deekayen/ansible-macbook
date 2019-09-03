@@ -92,7 +92,6 @@
       - textual
       - vmware-fusion
       - homebrew/cask-drivers/yubico-authenticator
-    homebrew_upgrade_all_packages: yes
 
   roles:
     - finder
