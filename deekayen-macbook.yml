@@ -37,7 +37,6 @@
       - wget
       - xz
       - youtube-dl
-    homebrew_upgrade_all_packages: yes
     homebrew_taps:
       - caskroom/cask
       - caskroom/fonts
