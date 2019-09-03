@@ -71,7 +71,6 @@
       - smartgit
       - torbrowser
       - viscosity
-    homebrew_upgrade_all_packages: yes
 
   roles:
     - finder
