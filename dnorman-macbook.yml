@@ -8,6 +8,7 @@
       - ansible-lint
       - ant
       - autoconf
+      - aws-okta
       - awscli
       - bash
       - cowsay
