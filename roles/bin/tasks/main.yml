@@ -19,7 +19,7 @@
     url: https://testssl.sh/testssl.sh
     dest: "{{ ansible_env.HOME }}/bin/testssl.sh"
     mode: 0755
-  when: testssl_sh.stat.exists == False
+  when: not testssl_sh.stat.exists
 
 - name: Install yamllint.
   pip:

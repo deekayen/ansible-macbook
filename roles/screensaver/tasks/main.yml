@@ -49,4 +49,4 @@
     dest: "{{ screensaver_home }}"
     copy: no
   register: padbury_clock_download
-  when: padbury_clock_installed.stat.exists == False
+  when: not padbury_clock_installed.stat.exists
