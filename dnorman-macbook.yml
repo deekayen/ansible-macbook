@@ -105,6 +105,7 @@
     - google-chrome
     - motd
     - hitrust
+    - ansible
     - cowsay
 
 # safari-fido-u2f
