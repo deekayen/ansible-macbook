@@ -1,0 +1,9 @@
+---
+
+- name: Whitelist task profiling.
+  ini_file:
+    path: ~/.ansible.cfg
+    section: defaults
+    option: callback_whitelist
+    value: profile_tasks,timer
+    mode: 0644
