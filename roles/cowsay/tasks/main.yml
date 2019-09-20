@@ -1,0 +1,30 @@
+---
+
+- hosts: localhost
+  connection: local
+
+  tasks:
+    - name: Install cowsay.
+      homebrew:
+        name: cowsay
+
+    - name: brew list cowsay
+      command: brew list cowsay
+      register: cowsay_return
+
+    - name: /usr/local/Cellar/cowsay/3.04/INSTALL_RECEIPT.json
+      debug:
+        var: cowsay_return.stdout_lines[0]
+
+    - name: Look for installed cowsay version number.
+      set_fact:
+        version: "{{ cowsay_return.stdout_lines[0] | regex_search('(\\d+\\.\\d+)') }}"
+
+    - name: 3.04
+      debug:
+        var: version
+
+    - name: Install buffalo cow.
+      get_url:
+        url: https://gist.githubusercontent.com/deekayen/8a8e3fc22a7a84a35ada9dd9b4703b27/raw/c9515612afa387dc6d4445bace9ebcd0738cad99/buffalo.cow
+        dest: "/usr/local/Cellar/cowsay/{{ version }}/share/cows/buffalo.cow"
