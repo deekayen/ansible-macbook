@@ -7,3 +7,11 @@
     option: callback_whitelist
     value: profile_tasks,timer
     mode: 0644
+
+- name: Omit skipped tasks from output.
+  ini_file:
+    path: ~/.ansible.cfg
+    section: defaults
+    option: display_skipped_hosts
+    value: no
+    mode: 0644
