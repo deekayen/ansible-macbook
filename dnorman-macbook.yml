@@ -105,6 +105,7 @@
     - google-chrome
     - motd
     - hitrust
+    - cowsay
 
 # safari-fido-u2f
 # https://github.com/Safari-FIDO-U2F/Safari-FIDO-U2F
