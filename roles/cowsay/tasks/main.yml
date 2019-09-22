@@ -1,8 +1,8 @@
 ---
 
 - name: Install cowsay.
-    homebrew:
-      name: cowsay
+  homebrew:
+    name: cowsay
 
 - name: brew list cowsay
   command: brew list cowsay
