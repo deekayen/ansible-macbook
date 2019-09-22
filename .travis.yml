@@ -5,16 +5,12 @@ matrix:
     - os: osx
       osx_image: xcode11
       language: generic
-    - os: osx
-      osx_image: xcode10.2
-      language: generic
 
 before_install:
   - brew update
   - wget https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py
 
 install:
-  - brew upgrade ansible
   - brew install ansible-lint
   - sudo python /tmp/get-pip.py
   - sudo pip install ansible-review
