@@ -3,9 +3,11 @@
 - name: Install cowsay.
   homebrew:
     name: cowsay
+  check_mode: no
 
-- name: brew list cowsay
+- name: "brew list cowsay" # noqa 301
   command: brew list cowsay
+  check_mode: no
   register: cowsay_return
 
 - name: /usr/local/Cellar/cowsay/3.04/INSTALL_RECEIPT.json
@@ -15,6 +17,7 @@
 - name: Look for installed cowsay version number.
   set_fact:
     version: "{{ cowsay_return.stdout_lines[0] | regex_search('(\\d+\\.\\d+)') }}"
+  check_mode:
 
 - name: 3.04
   debug:
