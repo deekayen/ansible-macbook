@@ -46,7 +46,6 @@
     homebrew_cask_apps:
       - 1password
       - alfred
-      - amazon-chime
       - android-file-transfer
       - atom
       - bartender
@@ -82,7 +81,6 @@
       - muzzle
       - pgadmin4
       - postman
-      - rescuetime
       - send-to-kindle
       - skitch
       - smartgit
