@@ -8,13 +8,11 @@ matrix:
 
 before_install:
   - brew update
-  - wget https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py
 
 install:
-  - brew install ansible-lint
-  - sudo python /tmp/get-pip.py
-  - sudo pip install ansible-review
-  - sudo pip install yamllint
+  - brew install ansible ansible-lint
+  - sudo pip3 install ansible-review
+  - sudo pip3 install yamllint
   - ansible-galaxy install -r roles/requirements.yml
 
 before_script:
