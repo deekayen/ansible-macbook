@@ -10,7 +10,8 @@ before_install:
   - brew update
 
 install:
-  - brew install ansible ansible-lint
+  - brew upgrade ansible
+  - brew install ansible-lint
   - sudo pip3 install ansible-review
   - sudo pip3 install yamllint
   - ansible-galaxy install -r roles/requirements.yml
