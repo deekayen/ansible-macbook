@@ -4,27 +4,37 @@
 
   vars:
     homebrew_installed_packages:
+      - aescrypt
       - ansible
       - ansible-lint
       - ant
+      - apr
       - autoconf
+      - automake
       - aws-okta
       - awscli
       - bash
+      - cmake
       - cowsay
+      - docker
+      - docker-machine
       - dos2unix
       - ffmpeg
+      - gcc
       - git
       - git-lfs
       - gnupg
       - gnupg2
       - gpg-agent
+      - groovy
       - htop-osx
       - jp2a
       - krb5
+      - kubernetes-cli
       - maven
       - mcrypt
       - md5sha1sum
+      - molecule
       - mosh
       - nmap
       - openssh
@@ -34,11 +44,17 @@
       - pngout
       - pre-commit
       - pwgen
+      - python
+      - python@2
+      - ruby
+      - sqlite
+      - summon
       - terraform
       - unix2dos
       - unrar
       - wget
       - yamllint
+      - youtube-dl
     homebrew_taps:
       - caskroom/cask
       - caskroom/fonts
