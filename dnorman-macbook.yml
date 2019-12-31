@@ -85,7 +85,6 @@
       - keepassx
       - keka
       - kitematic
-      - lastpass
       - libreoffice
       - monodraw
       - multipass
@@ -98,10 +97,13 @@
       - smartgit
       - smartsynchronize
       - sourcetree
+      - sparkleshare
       - sublime-merge
       - sublime-text
       - textual
       - vmware-fusion
+      - vmware-remote-console
+      - xscreensaver
       - homebrew/cask-drivers/yubico-authenticator
 
   roles:
