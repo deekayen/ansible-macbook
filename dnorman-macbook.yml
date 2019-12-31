@@ -7,8 +7,6 @@
       - aescrypt
       - ansible
       - ansible-lint
-      - ant
-      - apr
       - autoconf
       - automake
       - aws-okta
@@ -29,9 +27,7 @@
       - groovy
       - htop-osx
       - jp2a
-      - krb5
       - kubernetes-cli
-      - maven
       - mcrypt
       - md5sha1sum
       - molecule
