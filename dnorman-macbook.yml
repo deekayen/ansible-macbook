@@ -50,7 +50,7 @@
       - yamllint
       - youtube-dl
     homebrew_taps:
-      - caskroom/cask
+      - homebrew/cask-cask
       - homebrew/cask-fonts
       - jonof/kenutils
     homebrew_cask_apps:
