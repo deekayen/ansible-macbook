@@ -39,7 +39,7 @@
       - youtube-dl
     homebrew_taps:
       - caskroom/cask
-      - caskroom/fonts
+      - homebrew/cask-fonts
       - homebrew/php
       - jonof/kenutils
     homebrew_cask_apps:
