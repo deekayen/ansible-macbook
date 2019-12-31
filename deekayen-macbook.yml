@@ -38,6 +38,7 @@
       - xz
       - youtube-dl
     homebrew_taps:
+      - homebrew/core
       - homebrew/cask-cask
       - homebrew/cask-fonts
       - jonof/kenutils
