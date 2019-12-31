@@ -38,7 +38,7 @@
       - xz
       - youtube-dl
     homebrew_taps:
-      - caskroom/cask
+      - homebrew/cask-cask
       - homebrew/cask-fonts
       - homebrew/php
       - jonof/kenutils
