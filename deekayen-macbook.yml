@@ -40,7 +40,6 @@
     homebrew_taps:
       - homebrew/cask-cask
       - homebrew/cask-fonts
-      - homebrew/php
       - jonof/kenutils
     homebrew_cask_apps:
       - 1password
