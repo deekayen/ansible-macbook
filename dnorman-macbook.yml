@@ -40,8 +40,6 @@
       - pngout
       - pre-commit
       - pwgen
-      - python
-      - python@2
       - ruby
       - sqlite
       - summon
