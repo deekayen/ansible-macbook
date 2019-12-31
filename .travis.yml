@@ -11,8 +11,6 @@ env:
 
 before_install:
   - brew update
-  - brew cleanup
-  - brew cask cleanup
 
 install:
   - brew unlink python@2
