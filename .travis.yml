@@ -1,7 +1,7 @@
 ---
 
 os: osx
-osx_image: xcode11
+osx_image: xcode10.3
 language: generic
       
 env:
@@ -15,8 +15,7 @@ before_install:
 
 install:
   - brew unlink python@2
-  - brew install python
-  - brew upgrade ansible
+  - brew upgrade ansible python
   - brew install ansible-lint
   - sudo pip3 install ansible-review
   - sudo pip3 install yamllint
