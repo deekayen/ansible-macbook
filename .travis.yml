@@ -8,7 +8,6 @@ env:
   jobs:
     - PLAYBOOK: deekayen-macbook
     - PLAYBOOK: dnorman-macbook
-    - PLAYBOOK: dnorman-macvm
 
 before_install:
   - brew update
