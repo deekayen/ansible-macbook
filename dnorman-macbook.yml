@@ -104,7 +104,7 @@
       - vmware-fusion
       - vmware-remote-console
       - xscreensaver
-      - yubico-authenticator
+      - homebrew/cask-drivers/yubico-authenticator
 
   roles:
     - finder
