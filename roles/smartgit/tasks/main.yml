@@ -1,17 +1,17 @@
 ---
 
-- name: Install SmartGit.
-  homebrew_cask:
-    name: "smartgit"
-    state: present
-
 - name: Install git and git-lfs.
   homebrew:
-    name: "{{ item }}"
+    name:
+      - git
+      - git-lfs
     state: present
   with_items:
-    - git
-    - git-lfs
+
+- name: Install SmartGit.
+  homebrew_cask:
+    name: smartgit
+    state: present
 
 # https://groups.google.com/forum/#!topic/smartgit/PXaIRQJS_HU
 # https://www.syntevo.com/doc/display/SG071/VM+options#VMoptions-ExtendedPATH
