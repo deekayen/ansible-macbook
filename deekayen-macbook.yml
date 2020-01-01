@@ -97,7 +97,7 @@
       - ukelele
       - viscosity
       - vlc
-      - yubico-authenticator
+      - homebrew/cask-drivers/yubico-authenticator
 
   roles:
     - finder
