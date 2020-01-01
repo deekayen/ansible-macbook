@@ -102,7 +102,6 @@
       loop:
         - homebrew/cask-cask
         - homebrew/cask-fonts
-        - homebrew/cask-fonts
         - jonof/kenutils
 
   roles:
