@@ -37,11 +37,6 @@
       - wget
       - xz
       - youtube-dl
-    homebrew_taps:
-      - homebrew/core
-      - homebrew/cask-cask
-      - homebrew/cask-fonts
-      - jonof/kenutils
     homebrew_cask_apps:
       - 1password
       - alfred
@@ -100,6 +95,15 @@
       - viscosity
       - vlc
       - yubico-authenticator
+
+  pre_tasks:
+    - homebrew_tap:
+        name: "{{ item }}"
+      loop:
+        - homebrew/cask-cask
+        - homebrew/cask-fonts
+        - homebrew/cask-fonts
+        - jonof/kenutils
 
   roles:
     - finder
