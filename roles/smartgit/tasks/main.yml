@@ -15,6 +15,12 @@
 
 # https://groups.google.com/forum/#!topic/smartgit/PXaIRQJS_HU
 # https://www.syntevo.com/doc/display/SG071/VM+options#VMoptions-ExtendedPATH
+- name: "Create folder for smartgit.vmoptions."
+  file:
+    path: "{{ smartgit_user_home }}/Library/Preferences/SmartGit"
+    state: directory
+
+# Touch alone wasn't enough to create the path and file, even though the docs suggest it would.
 - name: "Create a smartgit.vmoptions file."
   file:
     path: "{{ smartgit_user_home }}/Library/Preferences/SmartGit/smartgit.vmoptions"
