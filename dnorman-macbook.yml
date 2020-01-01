@@ -50,6 +50,7 @@
       - yamllint
       - youtube-dl
     homebrew_taps:
+      - cyberark/tools
       - homebrew/core
       - homebrew/cask-fonts
       - jonof/kenutils
