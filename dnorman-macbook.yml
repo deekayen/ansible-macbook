@@ -23,7 +23,6 @@
       - git-lfs
       - gnupg
       - gnupg2
-      - gpg-agent
       - groovy
       - htop-osx
       - jp2a
