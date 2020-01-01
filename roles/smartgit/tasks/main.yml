@@ -2,7 +2,7 @@
 
 - name: Install SmartGit.
   homebrew_cask:
-    name: "smargit"
+    name: "smartgit"
     state: present
 
 - name: Install git and git-lfs.
