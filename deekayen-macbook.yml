@@ -15,7 +15,6 @@
       - git-lfs
       - gnupg
       - gnupg2
-      - gpg-agent
       - htop-osx
       - hugo
       - jp2a
