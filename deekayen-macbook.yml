@@ -44,7 +44,6 @@
     homebrew_cask_apps:
       - 1password
       - alfred
-      - amazon-drive
       - amazon-music
       - android-file-transfer
       - applepi-baker
