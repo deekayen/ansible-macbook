@@ -25,7 +25,7 @@
     path: "{{ smartgit_user_home }}/Library/Preferences/SmartGit/smartgit.vmoptions"
     state: touch
   tags:
-    - notravis
+    - no_ci
 
 - name: "Add git-lfs to the smartgit.vmoptions path."
   lineinfile:
@@ -33,4 +33,4 @@
     line: "path={{ smartgit_path }}"
   when: not ansible_check_mode
   tags:
-    - notravis
+    - no_ci
