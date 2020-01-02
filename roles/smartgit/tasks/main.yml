@@ -2,9 +2,10 @@
 
 - name: Install git and git-lfs.
   homebrew:
-    name: ['git', 'git-lfs']
+    name:
+      - git
+      - git-lfs
     state: present
-  with_items:
 
 - name: Install SmartGit.
   homebrew_cask:
