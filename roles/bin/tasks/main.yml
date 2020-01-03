@@ -21,11 +21,6 @@
     mode: 0755
   when: not testssl_sh.stat.exists
 
-- name: Install yamllint.
-  pip:
-    name: yamllint
-    state: present
-
 - name: Install mdl.
   gem:
     name: mdl
