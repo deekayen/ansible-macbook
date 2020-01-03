@@ -6,11 +6,15 @@
       - git
       - git-lfs
     state: present
+  retries: 3
+  delay: 5
 
 - name: Install SmartGit.
   homebrew_cask:
     name: smartgit
     state: present
+  retries: 3
+  delay: 5
 
 # https://groups.google.com/forum/#!topic/smartgit/PXaIRQJS_HU
 # https://www.syntevo.com/doc/display/SG071/VM+options#VMoptions-ExtendedPATH
