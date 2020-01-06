@@ -29,7 +29,8 @@ Run the playbook
 Ansible makes setup easy. This playbook is intended to run all its tasks as local actions, so an inventory file is not necessary.
 
 ```
-ansible-playbook --ask-sudo-pass dnorman-macbook.yml
+ansible-galaxy install -r roles/requirements.yml
+ansible-playbook --ask-become-pass dnorman-macbook.yml
 ```
 
 TODO
