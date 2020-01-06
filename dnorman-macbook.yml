@@ -23,7 +23,6 @@
       - git-lfs
       - gnupg
       - gnupg2
-      - groovy
       - htop-osx
       - jp2a
       - kubernetes-cli
@@ -55,7 +54,6 @@
       - jonof/kenutils
     homebrew_cask_apps:
       - 1password
-      - adoptopenjdk
       - alfred
       - android-file-transfer
       - atom
