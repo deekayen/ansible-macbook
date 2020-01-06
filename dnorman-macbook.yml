@@ -55,6 +55,7 @@
       - jonof/kenutils
     homebrew_cask_apps:
       - 1password
+      - adoptopenjdk
       - alfred
       - android-file-transfer
       - atom
