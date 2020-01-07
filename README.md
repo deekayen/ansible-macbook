@@ -41,3 +41,6 @@ https://github.com/stephenway/monokai.terminal
 
 Add default config and packages for Sublime (e.g.):
 https://packagecontrol.io/packages/Base16%20Color%20Schemes
+
+Install safari-fido-u2f
+https://github.com/Safari-FIDO-U2F/Safari-FIDO-U2F
