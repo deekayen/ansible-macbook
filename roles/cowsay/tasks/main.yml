@@ -25,7 +25,7 @@
 
 - name: Install buffalo cow.
   get_url:
-    url: https://gist.githubusercontent.com/deekayen/8a8e3fc22a7a84a35ada9dd9b4703b27/raw/15cdeb2610670f792c2cbfc9efea22ccedcaab64/buffalo.cow
+    url: https://gist.githubusercontent.com/deekayen/8a8e3fc22a7a84a35ada9dd9b4703b27/raw/715f3d6160e0379d3539d2a7895a0d1b9929bd2e/buffalo.cow
     dest: "/usr/local/Cellar/cowsay/{{ cowsay_version }}/share/cows/buffalo.cow"
 
 - name: Update local user ansible config to use buffalo.
