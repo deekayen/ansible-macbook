@@ -16,17 +16,17 @@
 
 - name: Look for installed cowsay version number.
   set_fact:
-    version: "{{ cowsay_return.stdout_lines[0] | regex_search('(\\d+\\.\\d+)') }}"
+    cowsay_version: "{{ cowsay_return.stdout_lines[0] | regex_search('(\\d+\\.\\d+)') }}"
   check_mode:
 
-- name: 3.04
+- name: "Show something like 3.04"
   debug:
-    var: version
+    var: cowsay_version
 
 - name: Install buffalo cow.
   get_url:
     url: https://gist.githubusercontent.com/deekayen/8a8e3fc22a7a84a35ada9dd9b4703b27/raw/15cdeb2610670f792c2cbfc9efea22ccedcaab64/buffalo.cow
-    dest: "/usr/local/Cellar/cowsay/{{ version }}/share/cows/buffalo.cow"
+    dest: "/usr/local/Cellar/cowsay/{{ cowsay_version }}/share/cows/buffalo.cow"
 
 - name: Update local user ansible config to use buffalo.
   ini_file:
