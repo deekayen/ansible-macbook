@@ -39,14 +39,12 @@
       - pre-commit
       - pwgen
       - ruby
-      - sqlite
       - summon
       - terraform
       - unix2dos
       - unrar
       - wget
       - yamllint
-      - youtube-dl
     homebrew_taps:
       - cyberark/tools
       - homebrew/core
@@ -55,14 +53,12 @@
     homebrew_cask_apps:
       - 1password
       - alfred
-      - android-file-transfer
       - atom
       - bartender
       - blueharvest
       - caffeine
       - dash
       - divvy
-      - eclipse-ide
       - firefox
       - font-anonymous-pro
       - font-bitstream-vera
@@ -75,8 +71,6 @@
       - font-source-sans-pro
       - font-source-serif-pro
       - gimp
-      - horndis
-      - imageoptim
       - istat-menus
       - iterm2
       - java
@@ -89,15 +83,12 @@
       - monodraw
       - muzzle
       - pgadmin4
-      - postman
       - send-to-kindle
       - skitch
       - smartgit
       - smartsynchronize
-      - sourcetree
       - sparkleshare
       - sublime-text
-      - textual
       - vmware-fusion
       - xscreensaver
       - homebrew/cask-drivers/yubico-authenticator
