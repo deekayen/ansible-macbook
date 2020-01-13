@@ -14,8 +14,6 @@
       - bash
       - cmake
       - cowsay
-      - docker
-      - docker-machine
       - dos2unix
       - ffmpeg
       - gcc
@@ -40,7 +38,6 @@
       - pwgen
       - ruby
       - summon
-      - terraform
       - unix2dos
       - unrar
       - wget
@@ -53,6 +50,7 @@
     homebrew_cask_apps:
       - 1password
       - alfred
+      - apache-directory-studio
       - atom
       - bartender
       - blueharvest
