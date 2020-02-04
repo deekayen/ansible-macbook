@@ -43,16 +43,13 @@
     homebrew_cask_apps:
       - 1password
       - alfred
-      - amazon-music
       - android-file-transfer
       - applepi-baker
-      - atom
       - authy
       - bartender
       - blueharvest
       - caffeine
       - calibre
-      - carbon-copy-cloner
       - dash
       - divvy
       - dropbox
@@ -79,9 +76,7 @@
       - kaleidoscope
       - kindle
       - kindlegen
-      - lastpass
       - libreoffice
-      - micro-snitch
       - monodraw
       - protonmail-bridge
       - protonvpn
