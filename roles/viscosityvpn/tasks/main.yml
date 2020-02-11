@@ -7,7 +7,3 @@
     type: bool
     value: true
     state: present
-
-- name: Install obfsproxy.
-  pip:
-    name: obfsproxy
