@@ -73,6 +73,7 @@
       - istat-menus
       - iterm2
       - java
+      - kap
       - karabiner-elements
       - keepassx
       - keka
@@ -86,6 +87,8 @@
       - skitch
       - smartgit
       - smartsynchronize
+      - soundflower
+      - soundflowerbed
       - sparkleshare
       - sublime-text
       - vmware-fusion
