@@ -79,7 +79,6 @@
       - keepassx
       - keka
       - libreoffice
-      - little-snitch
       - monodraw
       - muzzle
       - pgadmin4
@@ -88,10 +87,9 @@
       - skitch
       - smartgit
       - smartsynchronize
-      - soundflower
-      - soundflowerbed
       - sparkleshare
       - sublime-text
+      - visual-studio-code
       - vmware-fusion
       - homebrew/cask-drivers/yubico-authenticator
 
