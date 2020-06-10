@@ -37,6 +37,7 @@
       - pwgen
       - ruby
       - saml2aws
+      - subnetcalc
       - summon
       - unix2dos
       - unrar
