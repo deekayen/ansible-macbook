@@ -11,7 +11,6 @@ env:
 
 install:
   - brew unlink python@2
-  - brew install ansible
   - brew install ansible-lint
   - brew install yamllint
   - ansible-galaxy install -r roles/requirements.yml
