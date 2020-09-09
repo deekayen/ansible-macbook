@@ -16,19 +16,16 @@ install:
   - brew unlink python@2
   - brew upgrade ansible python
   - brew install ansible-lint
-  - sudo pip3 install ansible-review
   - sudo pip3 install yamllint
   - ansible-galaxy install -r roles/requirements.yml
 
 before_script:
   - yamllint --version
   - ansible-lint --version
-  - ansible-review --version
   - ansible --version
 
 script:
   - yamllint .
   - git ls-files | grep yml | xargs ansible-lint --exclude=/Users/travis/.ansible/roles
-  - git ls-files | grep yml | grep -v vars | xargs ansible-review -q
   - ansible-playbook --syntax-check --list-tasks -i 127.0.0.1, $PLAYBOOK.yml
   - ansible-playbook --diff -i 127.0.0.1, -c local --skip-tags no_ci $PLAYBOOK.yml
