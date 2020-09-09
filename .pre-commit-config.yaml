@@ -1,7 +1,7 @@
 ---
 
 - repo: https://github.com/willthames/ansible-review.git
-  sha: v0.13.4
+  sha: v0.13.9
   hooks:
     - id: ansible-review
       files: \.(yaml|yml)$
