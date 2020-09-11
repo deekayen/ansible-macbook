@@ -4,7 +4,6 @@
 
   vars:
     homebrew_installed_packages:
-      - aescrypt
       - ansible
       - ansible-lint
       - autoconf
@@ -37,14 +36,11 @@
       - pwgen
       - ruby
       - saml2aws
-      - subnetcalc
-      - summon
       - unix2dos
       - unrar
       - wget
       - yamllint
     homebrew_taps:
-      - cyberark/tools
       - homebrew/core
       - homebrew/cask-fonts
       - jonof/kenutils
@@ -53,11 +49,9 @@
       - 1password
       - alfred
       - apache-directory-studio
-      - atom
       - bartender
       - blueharvest
       - caffeine
-      - cyberduck
       - dash
       - divvy
       - firefox
@@ -82,7 +76,6 @@
       - monodraw
       - muzzle
       - pgadmin4
-      - powershell
       - send-to-kindle
       - skitch
       - smartgit
@@ -90,7 +83,6 @@
       - sparkleshare
       - sublime-text
       - subnetcalc
-      - visual-studio-code
       - vmware-fusion
       - homebrew/cask-drivers/yubico-authenticator
 
