@@ -70,8 +70,6 @@
       - istat-menus
       - iterm2
       - java
-      - kaleidoscope
-      - kindle
       - libreoffice
       - monodraw
       - protonmail-bridge
@@ -82,7 +80,6 @@
       - smartgit
       - sparkleshare
       - textual
-      - thunderbird
       - tor-browser
       - transmission
       - typora
