@@ -17,6 +17,7 @@
       - gnupg2
       - htop-osx
       - hugo
+      - java
       - jp2a
       - libav
       - libdvdcss
@@ -69,7 +70,6 @@
       - imageoptim
       - istat-menus
       - iterm2
-      - java
       - libreoffice
       - monodraw
       - protonmail-bridge
