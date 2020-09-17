@@ -20,6 +20,7 @@
       - gnupg
       - gnupg2
       - htop-osx
+      - java
       - jp2a
       - kubernetes-cli
       - mcrypt
@@ -64,7 +65,6 @@
       - gimp
       - istat-menus
       - iterm2
-      - java
       - kap
       - karabiner-elements
       - keepassx
