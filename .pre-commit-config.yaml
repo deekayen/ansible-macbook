@@ -1,7 +1,8 @@
 ---
 
-- repo: https://github.com/willthames/ansible-review.git
-  sha: v0.13.9
+- repo: https://github.com/ansible/ansible-lint.git
+  sha: v4.3.5
   hooks:
-    - id: ansible-review
+    - id: ansible-lint
       files: \.(yaml|yml)$
+      args: [--exclude=/Users/deekayen/.ansible]

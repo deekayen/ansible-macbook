@@ -4,6 +4,7 @@
   file:
     path: "{{ ansible_env.HOME }}/bin"
     state: directory
+    mode: 0755
   check_mode: no
 
 - name: Check for testssl.sh.

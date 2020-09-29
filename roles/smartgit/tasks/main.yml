@@ -22,6 +22,7 @@
   file:
     path: "{{ smartgit_user_home }}/Library/Preferences/SmartGit"
     state: directory
+    mode: 0755
   tags:
     - no_ci
 
@@ -30,6 +31,7 @@
   file:
     path: "{{ smartgit_user_home }}/Library/Preferences/SmartGit/smartgit.vmoptions"
     state: touch
+    mode: 0644
   tags:
     - no_ci
 
@@ -37,6 +39,7 @@
   lineinfile:
     path: "{{ smartgit_user_home }}/Library/Preferences/SmartGit/smartgit.vmoptions"
     line: "path={{ smartgit_path }}"
+    mode: 0644
   when: not ansible_check_mode
   tags:
     - no_ci

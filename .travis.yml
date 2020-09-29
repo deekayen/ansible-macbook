@@ -1,7 +1,7 @@
 ---
 
 os: osx
-osx_image: xcode11.6
+osx_image: xcode12
 language: generic
 
 env:
@@ -22,6 +22,6 @@ before_script:
 
 script:
   - yamllint .
-  - git ls-files | grep yml | xargs ansible-lint --exclude=/Users/travis/.ansible/roles
+  - ansible-lint --exclude=/Users/travis/.ansible/roles .
   - ansible-playbook --syntax-check --list-tasks -i 127.0.0.1, $PLAYBOOK.yml
   - ansible-playbook --diff -i 127.0.0.1, -c local --skip-tags no_ci $PLAYBOOK.yml
