@@ -40,8 +40,8 @@
       - unrar
       - wget
       - yamllint
+      - zsh
     homebrew_taps:
-      - homebrew/core
       - homebrew/cask-fonts
       - jonof/kenutils
       - versent/homebrew-taps
@@ -88,6 +88,7 @@
     - role: smartgit
       smartgit_user_home: /Users/dnorman
     - bin
+    - zsh
     - motd
     - hitrust
     - ansible

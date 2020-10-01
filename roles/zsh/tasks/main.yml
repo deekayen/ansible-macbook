@@ -1,0 +1,13 @@
+---
+
+- name: Install DNS flush plugin.
+  git:
+    repo: git@github.com:eventi/noreallyjustfuckingstopalready.git
+    dest: ~/.oh-my-zsh/custom/plugins
+    version: 0.0.1
+
+- name: Set ZSH_THEME to gallifrey.
+  lineinfile:
+    path: ~/.zshrc
+    regexp: '^ZSH_THEME='
+    line: ZSH_THEME="gallifrey"

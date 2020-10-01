@@ -37,6 +37,7 @@
       - wget
       - xz
       - youtube-dl
+      - zsh
     homebrew_taps:
       - homebrew/core
       - homebrew/cask-fonts
@@ -96,6 +97,7 @@
     - geerlingguy.homebrew
     - smartgit
     - bin
+    - zsh
     - google-chrome
     - gpgtools
     - motd
