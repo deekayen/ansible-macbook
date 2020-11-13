@@ -1,0 +1,51 @@
+---
+
+name: CI
+'on':
+  pull_request:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "30 1 * * 5"
+
+jobs:
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Check out the codebase.
+        uses: actions/checkout@v2
+
+      - name: Install test dependencies.
+        run: pip3 install ansible-lint
+
+      - name: Lint yamllint.
+        run: yamllint
+
+      - name: Lint ansible.
+        run: ansible-lint
+
+  install:
+    name: Playbook
+    runs-on: [ macos-10.15, macos-11.0 ]
+    strategy:
+      matrix:
+        playbook:
+          - deekayen-macbook
+          - dnorman-macbook
+
+    steps:
+      - name: Check out the codebase.
+        uses: actions/checkout@v2
+
+      - name: Install ansible-lint.
+        run: brew install ansible
+
+      - name: Check syntax.
+        run: ansible-playbook --syntax-check --list-tasks -i 127.0.0.1, ${{ matrix.playbook }}.yml
+
+      - name: Run playbook.
+        run: ansible-playbook --diff -i 127.0.0.1, -c local --skip-tags no_ci ${{ matrix.playbook }}.yml
+
