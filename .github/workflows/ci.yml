@@ -22,14 +22,14 @@ jobs:
         run: pip3 install ansible-lint
 
       - name: Lint yamllint.
-        run: yamllint -f github --no-warnings .
+        run: yamllint -f github -v --no-warnings .
 
       - name: Lint ansible.
         run: ansible-lint
 
   install:
     name: Playbook
-    runs-on: [ macos-10.15, macos-11.0 ]
+    runs-on: [macos-10.15, macos-11.0]
     strategy:
       matrix:
         playbook:
@@ -51,4 +51,3 @@ jobs:
 
       - name: Run playbook.
         run: ansible-playbook --diff -i 127.0.0.1, -c local --skip-tags no_ci ${{ matrix.playbook }}.yml
-
