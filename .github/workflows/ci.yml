@@ -27,11 +27,13 @@ jobs:
       - name: Lint ansible.
         run: ansible-lint
 
+# https://docs.github.com/en/free-pro-team@latest/actions/reference/specifications-for-github-hosted-runners#supported-software
   install:
     name: Playbook
-    runs-on: [macos-10.15, macos-11.0]
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
+        os: [macos-10.15, macos-11.0]
         playbook:
           - deekayen-macbook
           - dnorman-macbook
