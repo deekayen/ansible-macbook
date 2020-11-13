@@ -43,6 +43,9 @@ jobs:
       - name: Install ansible-lint.
         run: brew install ansible
 
+      - name: Install galaxy dependencies.
+        run: ansible-galaxy install -r roles/requirements.yml
+
       - name: Check syntax.
         run: ansible-playbook --syntax-check --list-tasks -i 127.0.0.1, ${{ matrix.playbook }}.yml
 
