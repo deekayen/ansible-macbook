@@ -1,7 +1,7 @@
 MacOS ansible playbook
 ======================
 
-[![Build Status](https://travis-ci.org/deekayen/ansible-macbook.svg?branch=main)](https://travis-ci.org/deekayen/ansible-macbook) ![CC0 1.0 Universal](https://img.shields.io/badge/license-CC0--1.0-blue.svg) [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![CI](https://github.com/deekayen/ansible-macbook/workflows/CI/badge.svg)](https://github.com/deekayen/ansible-macbook/actions?query=workflow%3ACI) ![CC0 1.0 Universal](https://img.shields.io/badge/license-CC0--1.0-blue.svg) [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
 Install Homebrew
 ----------------
