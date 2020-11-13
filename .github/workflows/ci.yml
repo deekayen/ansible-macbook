@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install test dependencies.
-        run: apt install ansible-lint
+        run: sudo apt install ansible-lint
 
       - name: Lint yamllint.
         run: yamllint -f github -v --no-warnings .
