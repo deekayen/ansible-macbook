@@ -43,6 +43,11 @@
     path: "{{ screensaver_home }}/Padbury Clock.saver"
   register: padbury_clock_installed
 
+- name: Create screensaver install path.
+  file:
+    path: "{{ screensaver_home }}"
+    state: directory
+
 - name: Download and install Padbury Clock.
   unarchive:
     src: https://padbury.app/padbury-clock.zip
