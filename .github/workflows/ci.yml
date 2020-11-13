@@ -22,7 +22,7 @@ jobs:
         run: pip3 install ansible-lint
 
       - name: Lint yamllint.
-        run: yamllint .
+        run: yamllint -f github --no-warnings .
 
       - name: Lint ansible.
         run: ansible-lint
