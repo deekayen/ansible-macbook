@@ -2,7 +2,7 @@
 
 - name: Install DNS flush plugin.
   git:
-    repo: git@github.com:eventi/noreallyjustfuckingstopalready.git
+    repo: https://github.com/eventi/noreallyjustfuckingstopalready.git
     dest: ~/.oh-my-zsh/custom/plugins
     version: 0.0.1
 
