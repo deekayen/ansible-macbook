@@ -13,7 +13,6 @@
     domain: com.apple.screensaver
     key: idleTime
     host: currentHost
-    type: int
     value: 120
     state: present
 
