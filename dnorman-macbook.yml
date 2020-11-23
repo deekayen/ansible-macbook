@@ -31,7 +31,6 @@
       - openssh
       - openssl
       - openssl@1.1
-      - pngout
       - pre-commit
       - pwgen
       - ruby
