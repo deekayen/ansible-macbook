@@ -28,6 +28,7 @@
       - openssh
       - openssl
       - pandoc
+      - pngout
       - pre-commit
       - pwgen
       - ruby
