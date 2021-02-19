@@ -18,7 +18,6 @@
       - git
       - git-lfs
       - gnupg
-      - gnupg2
       - htop-osx
       - java
       - jp2a
