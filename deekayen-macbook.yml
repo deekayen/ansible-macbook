@@ -14,7 +14,6 @@
       - git
       - git-lfs
       - gnupg
-      - gnupg2
       - htop-osx
       - hugo
       - java
