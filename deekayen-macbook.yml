@@ -33,7 +33,6 @@
       - pwgen
       - ruby
       - unix2dos
-      - unrar
       - wget
       - xz
       - youtube-dl
