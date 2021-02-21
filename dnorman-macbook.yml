@@ -37,7 +37,6 @@
       - ruby
       - saml2aws
       - unix2dos
-      - unrar
       - wget
       - yamllint
       - zsh
