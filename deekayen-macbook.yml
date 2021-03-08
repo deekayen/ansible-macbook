@@ -19,6 +19,7 @@
       - hugo
       - java
       - jp2a
+      - lagrange
       - libav
       - libdvdcss
       - mcrypt
@@ -41,6 +42,7 @@
       - homebrew/core
       - homebrew/cask-fonts
       - jonof/kenutils
+      - skyjake/lagrange
     homebrew_cask_apps:
       - 1password
       - alfred
