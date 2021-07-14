@@ -1,0 +1,12 @@
+---
+
+
+- name: Create Sublime preferences folder.
+  file:
+    state: directory
+    src: /Users/deekayen/Library/Application Support/Sublime Text 3/Packages/User
+
+- name: Copy Sublime preferences.
+  copy:
+    src: Preferences.sublime-settings
+    dest: /Users/deekayen/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings
