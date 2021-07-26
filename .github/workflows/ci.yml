@@ -33,7 +33,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [macos-11.0]
+        os: macos-11
         playbook:
           - deekayen-macbook
           - dnorman-macbook
