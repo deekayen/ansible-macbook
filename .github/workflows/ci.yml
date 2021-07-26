@@ -11,21 +11,23 @@ jobs:
 
   lint:
     name: Lint
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - name: Check out the codebase.
         uses: actions/checkout@v2
 
-      - name: Install test dependencies.
-        run: sudo apt install ansible-lint
+      - name: Set up Python 3.
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
 
-      - name: Lint yamllint.
-        run: yamllint -f github -v --no-warnings .
+      - name: Install test dependencies.
+        run: pip3 install yamllint ansible-lint
 
       - name: Lint ansible.
         run: ansible-lint
 
-# https://docs.github.com/en/free-pro-team@latest/actions/reference/specifications-for-github-hosted-runners#supported-software
+  # https://docs.github.com/en/free-pro-team@latest/actions/reference/specifications-for-github-hosted-runners#supported-software
   install:
     name: Playbook
     runs-on: ${{ matrix.os }}

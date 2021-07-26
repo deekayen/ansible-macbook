@@ -18,7 +18,6 @@
       - gcc
       - git
       - git-lfs
-      - gnupg
       - htop-osx
       - java
       - jp2a
@@ -47,7 +46,6 @@
     homebrew_cask_apps:
       - 1password
       - alfred
-      - apache-directory-studio
       - bartender
       - blueharvest
       - caffeine
@@ -71,7 +69,6 @@
       - smartgit
       - smartsynchronize
       - sublime-text
-      - subnetcalc
       - vmware-fusion
       - homebrew/cask-drivers/yubico-authenticator
 

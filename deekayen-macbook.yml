@@ -13,14 +13,12 @@
       - ffmpeg
       - git
       - git-lfs
-      - gnupg
       - font-source-serif-pro
       - htop-osx
       - hugo
       - java
       - jp2a
       - lagrange
-      - libav
       - libdvdcss
       - mcrypt
       - md5sha1sum
@@ -96,7 +94,7 @@
     - smartgit
     - bin
     - zsh
-    - google-chrome
+    - google_chrome
     - gpgtools
     - motd
     - sublime

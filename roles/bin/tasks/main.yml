@@ -12,7 +12,8 @@
     path: "{{ ansible_env.HOME }}/bin/testssl.sh"
   register: testssl_sh
 
-- debug:
+- name: "Debug: result of check for testssl.sh."
+  debug:
     var: testssl_sh
 
 - name: Download testssl.sh.
