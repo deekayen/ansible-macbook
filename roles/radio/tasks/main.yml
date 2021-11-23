@@ -1,0 +1,15 @@
+---
+
+- name: Copy WSJT-X memory config to LaunchDaemons.
+  copy:
+    src: "{{ role_path }}/files/com.wsjtx.sysctl.plist"
+    dest: /Library/LaunchDaemons/com.wsjtx.sysctl.plist
+  become: true
+
+- name: Prevent WSJT-X from being put into sleep mode.
+  osx_defaults:
+    domain: org.k1jt.wsjtx
+    key: NSAppSleepDisable
+    type: bool
+    value: true
+    state: present
