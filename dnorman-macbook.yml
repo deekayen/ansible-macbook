@@ -40,6 +40,7 @@
       - yamllint
       - zsh
     homebrew_taps:
+      - hashicorp/tap
       - homebrew/cask-fonts
       - jonof/kenutils
       - versent/homebrew-taps
@@ -58,6 +59,7 @@
       - font-source-code-pro
       - font-source-sans-pro
       - gimp
+      - hashicorp/tap/vault
       - istat-menus
       - iterm2
       - karabiner-elements
