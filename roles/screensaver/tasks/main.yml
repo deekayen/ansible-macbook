@@ -1,7 +1,7 @@
 ---
 
 - name: Require password screensaver when waking from screensaver.
-  osx_defaults:
+  community.general.osx_defaults:
     domain: com.apple.screensaver
     key: askForPassword
     type: int
@@ -9,7 +9,7 @@
     state: present
 
 - name: Set screensaver password prompt to 5 second delay.
-  osx_defaults:
+  community.general.osx_defaults:
     domain: com.apple.screensaver
     key: askForPasswordDelay
     type: float
@@ -17,7 +17,7 @@
     state: present
 
 - name: Hide the clock on the screensaver.
-  osx_defaults:
+  community.general.osx_defaults:
     domain: com.apple.screensaver
     host: currentHost
     key: showClock
@@ -26,7 +26,7 @@
     state: present
 
 - name: Check for Anèmona install.
-  stat:
+  ansible.builtin.stat:
     path: "{{ screensaver_home }}/Anèmona.saver"
   register: anemona_installed
 
@@ -39,17 +39,17 @@
 #  when: anemona_installed.stat.exists == False
 
 - name: Check for Padbury Clock install.
-  stat:
+  ansible.builtin.stat:
     path: "{{ screensaver_home }}/Padbury Clock.saver"
   register: padbury_clock_installed
 
 - name: Create screensaver install path.
-  file:
+  ansible.builtin.file:
     path: "{{ screensaver_home }}"
     state: directory
 
 - name: Download and install Padbury Clock.
-  unarchive:
+  ansible.builtin.unarchive:
     src: https://padbury.app/padbury-clock.zip
     dest: "{{ screensaver_home }}"
     copy: no

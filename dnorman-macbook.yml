@@ -30,6 +30,7 @@
       - openssh
       - openssl
       - openssl@1.1
+      - pinentry-mac
       - pngout
       - pre-commit
       - pwgen

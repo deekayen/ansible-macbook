@@ -1,7 +1,7 @@
 ---
 
 - name: Save files locally by default instead of iCloud.
-  osx_defaults:
+  community.general.osx_defaults:
     domain: NSGlobalDomain
     key: NSDocumentSaveNewDocumentsToCloud
     type: bool
@@ -9,7 +9,7 @@
     state: present
 
 - name: Avoid automatic smart quote substitution.
-  osx_defaults:
+  community.general.osx_defaults:
     domain: NSGlobalDomain
     key: NSAutomaticQuoteSubstitutionEnabled
     type: bool
@@ -17,7 +17,7 @@
     state: present
 
 - name: Avoid automatic smart dash substitution.
-  osx_defaults:
+  community.general.osx_defaults:
     domain: NSGlobalDomain
     key: NSAutomaticDashSubstitutionEnabled
     type: bool
@@ -25,7 +25,7 @@
     state: present
 
 - name: Disable automatic spelling correction.
-  osx_defaults:
+  community.general.osx_defaults:
     domain: NSGlobalDomain
     key: NSAutomaticSpellingCorrectionEnabled
     type: bool
@@ -33,7 +33,7 @@
     state: present
 
 - name: Save screenshots as PNG files.
-  osx_defaults:
+  community.general.osx_defaults:
     domain: com.apple.screencapture
     key: type
     type: string
@@ -41,7 +41,7 @@
     state: present
 
 - name: Disable shadow in screenshot images.
-  osx_defaults:
+  community.general.osx_defaults:
     domain: com.apple.screencapture
     key: disable-shadow
     type: bool
@@ -49,7 +49,7 @@
     state: present
 
 - name: Avoid creating .DS_Store files on network volumes.
-  osx_defaults:
+  community.general.osx_defaults:
     domain: com.apple.desktopservices
     key: DSDontWriteNetworkStores
     type: bool
@@ -57,7 +57,7 @@
     state: present
 
 - name: Disable Dashboard app.
-  osx_defaults:
+  community.general.osx_defaults:
     domain: com.apple.dashboard
     key: mcx-disabled
     type: bool

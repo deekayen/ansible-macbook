@@ -1,30 +1,30 @@
 ---
 
 - name: Check for bin directory.
-  file:
+  ansible.builtin.file:
     path: "{{ ansible_env.HOME }}/bin"
     state: directory
     mode: 0755
   check_mode: no
 
 - name: Check for testssl.sh.
-  stat:
+  ansible.builtin.stat:
     path: "{{ ansible_env.HOME }}/bin/testssl.sh"
   register: testssl_sh
 
 - name: "Debug: result of check for testssl.sh."
-  debug:
+  ansible.builtin.debug:
     var: testssl_sh
 
 - name: Download testssl.sh.
-  get_url:
+  ansible.builtin.get_url:
     url: https://testssl.sh/testssl.sh
     dest: "{{ ansible_env.HOME }}/bin/testssl.sh"
     mode: 0755
   when: not testssl_sh.stat.exists
 
 - name: Install mdl.
-  gem:
+  community.general.packaging.language.gem:
     name: mdl
     state: present
   become: true

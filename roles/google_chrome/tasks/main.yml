@@ -1,7 +1,7 @@
 ---
 
 - name: Disable sensitive and senseless swipe-based navigation.
-  osx_defaults:
+  community.general.osx_defaults:
     domain: com.google.Chrome
     key: AppleEnableSwipeNavigateWithScrolls
     type: bool

@@ -1,7 +1,7 @@
 ---
 
 - name: Install DNS flush plugin.
-  git:
+  ansible.builtin.git:
     repo: https://github.com/eventi/noreallyjustfuckingstopalready.git
     dest: ~/.oh-my-zsh/custom/plugins
     version: 0.0.1
@@ -9,7 +9,7 @@
 # This might not exist yet in CI runs, but I don't want to create it
 # until I open iterm to get defaults in there. Chicken/egg.
 - name: Set ZSH_THEME to gallifrey.
-  lineinfile:
+  ansible.builtin.lineinfile:
     path: ~/.zshrc
     regexp: '^ZSH_THEME='
     line: ZSH_THEME="gallifrey"

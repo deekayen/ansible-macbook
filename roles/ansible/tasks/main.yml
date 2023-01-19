@@ -1,7 +1,7 @@
 ---
 
 - name: Whitelist task profiling.
-  ini_file:
+  community.general.files.ini_file:
     path: ~/.ansible.cfg
     section: defaults
     option: callback_whitelist
@@ -9,7 +9,7 @@
     mode: 0644
 
 - name: Omit skipped tasks from output.
-  ini_file:
+  community.general.files.ini_file:
     path: ~/.ansible.cfg
     section: defaults
     option: display_skipped_hosts

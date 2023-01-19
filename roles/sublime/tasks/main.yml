@@ -2,11 +2,11 @@
 
 
 - name: Create Sublime preferences folder.
-  file:
+  ansible.builtin.file:
     state: directory
     src: /Users/deekayen/Library/Application Support/Sublime Text 3/Packages/User
 
 - name: Copy Sublime preferences.
-  copy:
+  ansible.builtin.copy:
     src: Preferences.sublime-settings
     dest: /Users/deekayen/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings

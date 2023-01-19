@@ -1,7 +1,7 @@
 ---
 
 - name: Install git and git-lfs.
-  homebrew:
+  community.general.packaging.os.homebrew:
     name:
       - git
       - git-lfs
@@ -10,7 +10,7 @@
   delay: 5
 
 - name: Install SmartGit.
-  homebrew_cask:
+  community.general.packaging.os.homebrew_cask:
     name: smartgit
     state: present
   retries: 3
@@ -19,7 +19,7 @@
 # https://groups.google.com/forum/#!topic/smartgit/PXaIRQJS_HU
 # https://www.syntevo.com/doc/display/SG071/VM+options#VMoptions-ExtendedPATH
 - name: "Create folder for smartgit.vmoptions."
-  file:
+  ansible.builtin.file:
     path: "{{ smartgit_user_home }}/Library/Preferences/SmartGit"
     state: directory
     mode: 0755
@@ -28,7 +28,7 @@
 
 # Touch alone wasn't enough to create the path and file, even though the docs suggest it would.
 - name: "Create a smartgit.vmoptions file."
-  file:
+  ansible.builtin.file:
     path: "{{ smartgit_user_home }}/Library/Preferences/SmartGit/smartgit.vmoptions"
     state: touch
     mode: 0644
@@ -36,7 +36,7 @@
     - no_ci
 
 - name: "Add git-lfs to the smartgit.vmoptions path."
-  lineinfile:
+  ansible.builtin.lineinfile:
     path: "{{ smartgit_user_home }}/Library/Preferences/SmartGit/smartgit.vmoptions"
     line: "path={{ smartgit_path }}"
     mode: 0644

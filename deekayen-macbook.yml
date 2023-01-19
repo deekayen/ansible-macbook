@@ -27,6 +27,7 @@
       - openssh
       - openssl
       - pandoc
+      - pinentry-mac
       - pngout
       - pre-commit
       - pwgen
