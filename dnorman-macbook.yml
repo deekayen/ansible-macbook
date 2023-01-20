@@ -34,6 +34,7 @@
       - pngout
       - pre-commit
       - pwgen
+      - rpm
       - ruby
       - saml2aws
       - unix2dos
