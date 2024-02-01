@@ -64,10 +64,9 @@
       - font-mononoki
       - font-mononoki-nerd-font
       - font-source-code-pro
-      - font-source-sans-pro
+      - font-source-sans-3
       - gimp
       - gpg-suite
-      - hashicorp/tap/vault
       - hazel
       - hex-fiend
       - imageoptim
@@ -79,7 +78,6 @@
       - microsoft-auto-update
       - microsoft-azure-storage-explorer
       - microsoft-excel
-      - microsoft-office
       - microsoft-outlook
       - microsoft-powerpoint
       - microsoft-remote-desktop
@@ -96,7 +94,6 @@
       - via
       - yubico-authenticator
       - yubico-yubikey-manager
-      - zoom
 
   roles:
     - finder
