@@ -23,7 +23,6 @@
       - kubernetes-cli
       - md5sha1sum
       - molecule
-      - nacl
       - nmap
       - openssh
       - openssl
@@ -32,7 +31,6 @@
       - pngout
       - pre-commit
       - pwgen
-      - rpm
       - ruby
       - saml2aws
       - unix2dos
