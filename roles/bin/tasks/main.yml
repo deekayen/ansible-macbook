@@ -22,9 +22,3 @@
     dest: "{{ ansible_env.HOME }}/bin/testssl.sh"
     mode: 0755
   when: not testssl_sh.stat.exists
-
-- name: Install mdl.
-  community.general.packaging.language.gem:
-    name: mdl
-    state: present
-  become: true
