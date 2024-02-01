@@ -24,34 +24,3 @@
     type: bool
     value: false
     state: present
-
-- name: Check for Anèmona install.
-  ansible.builtin.stat:
-    path: "{{ screensaver_home }}/Anèmona.saver"
-  register: anemona_installed
-
-#- name: Download and install Anèmona.
-#  unarchive:
-#    src: http://uri.cat/software/Anemona/Anemona_143.saver.zip
-#    dest: "{{ screensaver_home }}"
-#    copy: no
-#  register: anemona_download
-#  when: anemona_installed.stat.exists == False
-
-- name: Check for Padbury Clock install.
-  ansible.builtin.stat:
-    path: "{{ screensaver_home }}/Padbury Clock.saver"
-  register: padbury_clock_installed
-
-- name: Create screensaver install path.
-  ansible.builtin.file:
-    path: "{{ screensaver_home }}"
-    state: directory
-
-- name: Download and install Padbury Clock.
-  ansible.builtin.unarchive:
-    src: https://padbury.app/padbury-clock.zip
-    dest: "{{ screensaver_home }}"
-    copy: no
-  register: padbury_clock_download
-  when: not padbury_clock_installed.stat.exists
