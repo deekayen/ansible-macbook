@@ -22,7 +22,7 @@
   ansible.builtin.file:
     path: "{{ smartgit_user_home }}/Library/Preferences/SmartGit"
     state: directory
-    mode: 0755
+    mode: '755'
   tags:
     - no_ci
 

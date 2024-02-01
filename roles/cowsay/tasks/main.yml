@@ -25,14 +25,14 @@
 
 - name: Create a home for new cows.
   ansible.builtin.file:
-    path: "/usr/local/Cellar/cowsay/{{ cowsay_version }}/share/cows"
+    path: "/opt/homebrew/Cellar/cowsay/{{ cowsay_version }}/share/cows"
     state: directory
     recurse: true
 
 - name: Install buffalo cow.
   ansible.builtin.get_url:
     url: https://gist.githubusercontent.com/deekayen/8a8e3fc22a7a84a35ada9dd9b4703b27/raw/715f3d6160e0379d3539d2a7895a0d1b9929bd2e/buffalo.cow
-    dest: "/usr/local/Cellar/cowsay/{{ cowsay_version }}/share/cows/buffalo.cow"
+    dest: "/opt/homebrew/Cellar/cowsay/{{ cowsay_version }}/share/cows/buffalo.cow"
 
 - name: Update local user ansible config to use buffalo.
   community.general.files.ini_file:
@@ -40,4 +40,4 @@
     section: defaults
     option: cow_selection
     value: buffalo
-    mode: 0644
+    mode: '644'

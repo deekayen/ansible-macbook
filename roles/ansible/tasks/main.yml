@@ -6,7 +6,7 @@
     section: defaults
     option: callback_whitelist
     value: profile_tasks,timer
-    mode: 0644
+    mode: '644'
 
 - name: Omit skipped tasks from output.
   community.general.files.ini_file:
@@ -14,4 +14,4 @@
     section: defaults
     option: display_skipped_hosts
     value: no
-    mode: 0644
+    mode: '644'
