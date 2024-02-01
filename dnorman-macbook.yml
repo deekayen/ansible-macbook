@@ -23,6 +23,7 @@
       - kubernetes-cli
       - md5sha1sum
       - molecule
+      - nacl
       - nmap
       - openssh
       - openssl
