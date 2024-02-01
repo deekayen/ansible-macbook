@@ -14,7 +14,6 @@
       - cowsay
       - dos2unix
       - ffmpeg
-      - font-source-serif-pro
       - gcc
       - git
       - git-lfs
@@ -22,7 +21,6 @@
       - java
       - jp2a
       - kubernetes-cli
-      - mcrypt
       - md5sha1sum
       - molecule
       - nmap
