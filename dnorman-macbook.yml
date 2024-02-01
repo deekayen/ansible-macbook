@@ -102,7 +102,7 @@
     - finder
     - macos
     - screensaver
-    - geerlingguy.homebrew
+    - geerlingguy.mac.homebrew
     - role: smartgit
       smartgit_user_home: /Users/david.norman
     - bin
