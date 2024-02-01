@@ -101,7 +101,6 @@
   roles:
     - finder
     - macos
-    - safari
     - screensaver
     - geerlingguy.homebrew
     - role: smartgit
