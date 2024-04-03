@@ -14,10 +14,12 @@
       - git
       - git-lfs
       - font-source-serif-pro
+      - helm
       - htop-osx
       - hugo
       - java
       - jp2a
+      - kubectl
       - lagrange
       - libdvdcss
       - mcrypt
