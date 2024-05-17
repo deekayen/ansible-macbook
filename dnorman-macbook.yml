@@ -19,6 +19,7 @@
       - git-lfs
       - htop-osx
       - java
+      - jq
       - jp2a
       - kubernetes-cli
       - md5sha1sum
