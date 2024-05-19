@@ -17,6 +17,7 @@
       - gcc
       - git
       - git-lfs
+      - git-sizer
       - htop-osx
       - java
       - jq
