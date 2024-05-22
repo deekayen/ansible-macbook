@@ -41,7 +41,6 @@
       - zsh
     homebrew_taps:
       - homebrew/core
-      - homebrew/cask-fonts
       - jonof/kenutils
       - skyjake/lagrange
     homebrew_cask_apps:

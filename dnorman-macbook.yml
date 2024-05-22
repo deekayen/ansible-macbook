@@ -41,7 +41,6 @@
       - zsh
     homebrew_taps:
       - hashicorp/tap
-      - homebrew/cask-fonts
       - jonof/kenutils
       - versent/homebrew-taps
     homebrew_cask_apps:
