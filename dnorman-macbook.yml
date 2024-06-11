@@ -11,7 +11,6 @@
       - awscli
       - bash
       - cmake
-      - cowsay
       - dos2unix
       - ffmpeg
       - gcc
@@ -28,7 +27,6 @@
       - nmap
       - openssh
       - openssl
-      - openssl@1.1
       - pinentry-mac
       - pngout
       - pre-commit
