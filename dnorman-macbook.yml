@@ -21,7 +21,7 @@
       - java
       - jq
       - jp2a
-      - k9s
+      - derailed/k9s/k9s
       - kubernetes-cli
       - md5sha1sum
       - molecule
