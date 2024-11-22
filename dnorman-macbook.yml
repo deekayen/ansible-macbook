@@ -21,6 +21,7 @@
       - java
       - jq
       - jp2a
+      - k9s
       - kubernetes-cli
       - md5sha1sum
       - molecule
@@ -49,7 +50,6 @@
       - blueharvest
       - brave-browser
       - caffeine
-      - cocktail
       - cyberduck
       - dash
       - divvy
