@@ -35,6 +35,7 @@
       - ruby
       - saml2aws
       - hashicorp/tap/terraform
+      - tflint
       - unix2dos
       - wget
       - yamllint
