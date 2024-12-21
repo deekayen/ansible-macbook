@@ -34,7 +34,7 @@
       - pwgen
       - ruby
       - saml2aws
-      - terraform
+      - hashicorp/tap/terraform
       - unix2dos
       - wget
       - yamllint
