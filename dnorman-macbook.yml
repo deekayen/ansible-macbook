@@ -36,6 +36,7 @@
       - saml2aws
       - hashicorp/tap/terraform
       - tflint
+      - trufflehog
       - unix2dos
       - wget
       - yamllint
