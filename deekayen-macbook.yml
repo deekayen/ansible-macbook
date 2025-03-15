@@ -46,8 +46,6 @@
     homebrew_cask_apps:
       - 1password
       - alfred
-      - android-file-transfer
-      - applepi-baker
       - bartender
       - blueharvest
       - brave-browser
