@@ -6,42 +6,54 @@
     homebrew_installed_packages:
       - ansible
       - ansible-lint
-      - autoconf
       - automake
       - awscli
-      - bash
+      - azure-cli
+      - bitwarden-cli
       - cmake
+      - coreutils
+      - derailed/k9s/k9s
+      - docker
+      - docker-buildx
       - dos2unix
       - ffmpeg
-      - gcc
+      - gh
       - git
       - git-lfs
       - git-sizer
-      - htop-osx
-      - java
+      - glab
+      - hashicorp/tap/terraform
+      - htop
       - jq
       - jp2a
-      - derailed/k9s/k9s
       - kubernetes-cli
+      - llama.cpp
       - md5sha1sum
-      - molecule
       - nmap
+      - openjdk
       - openssh
-      - openssl
       - pinentry-mac
+      - pipx
       - pngout
+      - poppler
       - pre-commit
       - pwgen
+      - python@3.12
       - ruby
       - saml2aws
-      - hashicorp/tap/terraform
+      - slackdump
+      - sslscan
+      - swaks
+      - terraform-docs
+      - testssl
       - tflint
       - trufflehog
-      - unix2dos
       - wget
+      - wireguard-tools
       - yamllint
       - zsh
     homebrew_taps:
+      - derailed/k9s
       - hashicorp/tap
       - jonof/kenutils
       - versent/homebrew-taps
@@ -52,12 +64,13 @@
       - bartender
       - blueharvest
       - brave-browser
-      - caffeine
+      - claude
       - cyberduck
       - dash
       - divvy
       - firefox
       - flux
+      - flux-app
       - font-lato
       - font-mononoki
       - font-mononoki-nerd-font
@@ -71,13 +84,11 @@
       - istat-menus
       - iterm2
       - karabiner-elements
-      - keepassx
-      - libreoffice
+      - lm-studio
       - microsoft-auto-update
       - microsoft-excel
       - microsoft-outlook
       - microsoft-powerpoint
-      - microsoft-remote-desktop
       - microsoft-teams
       - microsoft-word
       - onedrive
@@ -87,9 +98,7 @@
       - smartgit
       - smartsynchronize
       - sublime-text
-      - via
       - yubico-authenticator
-      - yubico-yubikey-manager
 
   roles:
     - finder
